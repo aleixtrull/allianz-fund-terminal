@@ -1,0 +1,9 @@
+mstarpy
+yfinance
+pandas
+requests
+openpyxl
+supabase==2.*
+reportlab
+resend
+python-dotenv
