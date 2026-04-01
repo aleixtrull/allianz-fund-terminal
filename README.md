@@ -8,33 +8,53 @@ Tecnología: HTML + JS estático servido por GitHub Pages. Sin backend, sin logi
 
 ## Puesta en producción (GitHub corporativo Allianz)
 
-### 1. Crear el repositorio
+### Opción A — Clonar desde el repo de referencia y subir al corporativo
 
-En GitHub (o GitHub Enterprise corporativo):
-
-- **New repository** → nombre sugerido: `allianz-fund-terminal`
-- Visibilidad: **Private** o Internal
-- Sin README, .gitignore ni licencia — se sube el código tal cual
-
-### 2. Subir el código
+Si ya tienes acceso al repo de referencia en GitHub.com:
 
 ```bash
-cd allianz-lite
-git remote add origin https://github.com/ORGANIZACION/allianz-fund-terminal.git
+# 1. Clonar el repo
+git clone https://github.com/aleixtrull/allianz-fund-terminal.git
+cd allianz-fund-terminal
+
+# 2. Cambiar el remote al GitHub corporativo
+git remote remove origin
+git remote add origin https://github.allianz.com/ORG/allianz-fund-terminal.git
+
+# 3. Subir
 git push -u origin main
 ```
 
-### 3. Dar permisos de escritura al workflow
+> Crea el repo corporativo vacío primero (sin README, sin .gitignore) desde la interfaz web de GitHub antes de hacer el push.
 
-En el repositorio:
+### Opción B — Subir el código directamente
+
+Si partes del código fuente sin clonar:
+
+```bash
+cd allianz-fund-terminal   # carpeta con el código
+git init
+git add .
+git commit -m "feat: initial commit"
+git remote add origin https://github.allianz.com/ORG/allianz-fund-terminal.git
+git push -u origin main
+```
+
+---
+
+### Configuración obligatoria en el repo corporativo (3 pasos)
+
+#### Paso 1 — Permisos del workflow
+
+Para que el Actions pueda hacer commit automático de los CSVs:
 
 **Settings → Actions → General → Workflow permissions**
 - Seleccionar: **Read and write permissions**
 - Guardar
 
-> Sin esto el workflow no podrá hacer `git push` de los CSVs y fallará con error 403.
+> Sin esto el workflow falla con error 403 al intentar el `git push`.
 
-### 4. Activar GitHub Pages
+#### Paso 2 — Activar GitHub Pages
 
 **Settings → Pages**
 - Source: **Deploy from a branch**
@@ -42,21 +62,34 @@ En el repositorio:
 - Guardar
 
 La URL del sitio aparece en unos segundos:
-`https://ORGANIZACION.github.io/allianz-fund-terminal/`
+`https://ORG.github.io/allianz-fund-terminal/`
 
-> Si GitHub Pages está desactivado a nivel de organización, pide al administrador de GitHub que lo habilite para este repositorio en *Organization Settings → Policies*.
+> Si GitHub Pages está desactivado a nivel de organización, pide al administrador que lo habilite en *Organization Settings → Policies*.
 
-### 5. Primera ejecución manual
+#### Paso 3 — Primera ejecución manual (poblar datos)
 
-El repositorio recién subido no tiene datos. Hay que generarlos la primera vez:
+El repo recién subido no tiene CSVs. Hay que generarlos la primera vez:
 
 **Actions → "Update NAV Data" → Run workflow → Run workflow**
 
-El workflow tarda entre 15 y 30 minutos. Al terminar aparece un commit automático (`chore: update NAV data`) con los archivos `data/nav_all_funds.csv`, `data/nav_benchmarks.csv` y `data/nav_summary.csv`.
+Tarda 15–30 minutos. Al terminar aparece un commit automático `chore: update NAV data` con los archivos en `data/`. A partir de ahí el workflow se ejecuta solo 3 veces al día.
 
-### 6. Verificar
+**No hace falta configurar ningún secret.** El script usa Morningstar, Yahoo Finance y AllianzGI web (todos públicos). Solo necesita el `GITHUB_TOKEN` automático de GitHub.
+
+#### Verificar
 
 Abrir la URL de GitHub Pages. Si aparece "No se encontró nav_all_funds.csv" es que el paso anterior aún no terminó — esperar y recargar.
+
+---
+
+### ¿GitHub Enterprise Server (URL propia tipo `github.allianz.de`)?
+
+El proceso es idéntico. Verificar con el administrador que estén habilitados:
+
+- **GitHub Actions** con runners que tengan acceso a internet (para llegar a Morningstar y Yahoo Finance desde fuera de la red Allianz)
+- **GitHub Pages** para el repositorio
+
+Si los runners de Actions no tienen acceso a internet, el workflow no podrá descargar NAV. En ese caso la alternativa es ejecutar el script desde una máquina con acceso a internet y hacer push solo de los CSVs generados al repo manualmente.
 
 ---
 
