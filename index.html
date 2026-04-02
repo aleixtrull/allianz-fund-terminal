@@ -758,6 +758,11 @@ input[type=file]{display:none;}
   <div class="topbar-row1">
     <div class="logo"><span class="logo-dot"></span>ALLIANZ SPAIN TERMINAL</div>
     <div class="topbar-right">
+      <div id="product-filter-btns">
+        <button class="prod-btn active" onclick="setProductFilter(null,this)">TODOS</button>
+        <button class="prod-btn" onclick="setProductFilter('UL',this)">UL</button>
+        <button class="prod-btn" onclick="setProductFilter('FI',this)">FI</button>
+      </div>
       <span id="data-status" style="color:var(--text3);font-size:9px;">Sin datos</span>
       <span class="clock" id="clock">--:--:--</span>
       <button onclick="openCmdK()" title="Buscar (Ctrl+K / ⌘K)"
@@ -5090,6 +5095,13 @@ function restoreSession(){
     if(data.ptfWeights) S.portfolioWeights=data.ptfWeights;
     if(data.ptfSelected && S.portfolioSelected)
       data.ptfSelected.forEach(i=>S.portfolioSelected.add(i));
+    // Restore product filter (UL/FI/TODOS)
+    const _savedPF = localStorage.getItem('ft-product-filter');
+    S.productFilter = (_savedPF==='UL'||_savedPF==='FI') ? _savedPF : null;
+    document.querySelectorAll('.prod-btn').forEach(b=>{
+      const v=b.textContent==='TODOS'?null:b.textContent;
+      b.classList.toggle('active', v===S.productFilter);
+    });
     // page intentionally NOT restored — always open Home on load
     return null;
   }catch(e){return null;}
