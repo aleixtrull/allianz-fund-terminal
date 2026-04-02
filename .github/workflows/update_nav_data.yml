@@ -38,10 +38,10 @@ jobs:
       - name: Move CSVs to data/ folder
         run: |
           mkdir -p data
-          [ -f nav_all_funds.csv ]   && mv nav_all_funds.csv   data/nav_all_funds.csv
-          [ -f nav_benchmarks.csv ]  && mv nav_benchmarks.csv  data/nav_benchmarks.csv
-          [ -f nav_summary.csv ]     && mv nav_summary.csv     data/nav_summary.csv
-          [ -f fund_composition.json ] && cp fund_composition.json data/fund_composition.json
+          [ -f nav_all_funds.csv ]     && mv nav_all_funds.csv   data/nav_all_funds.csv   || true
+          [ -f nav_benchmarks.csv ]    && mv nav_benchmarks.csv  data/nav_benchmarks.csv  || true
+          [ -f nav_summary.csv ]       && mv nav_summary.csv     data/nav_summary.csv     || true
+          [ -f fund_composition.json ] && cp fund_composition.json data/fund_composition.json || true
 
       - name: Commit NAV data
         run: |
