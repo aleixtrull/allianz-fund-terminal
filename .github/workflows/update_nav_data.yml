@@ -37,6 +37,10 @@ jobs:
           mkdir -p data
           python fetch_funds_full_history.py --update --delay 0.5 --data-dir data
 
+      - name: Fetch fund composition data
+        run: python fetch_fund_composition.py --workers 2 --data-dir data
+        continue-on-error: true
+
       - name: Commit NAV data
         run: |
           git config user.name "github-actions[bot]"
