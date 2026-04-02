@@ -5618,7 +5618,10 @@ async function renderTodayPage(){
   const bmCards=BM_SHOW.map(id=>{
     const bm=BM_DATA[id];if(!bm||bm.prices.length<2)return '';
     const n=bm.prices.length;
-    const ret=(bm.prices[n-1]/bm.prices[n-2]-1)*100;
+    let i=n-1;while(i>0&&(isNaN(bm.prices[i])||bm.prices[i]==null))i--;
+    let j=i-1;while(j>=0&&(isNaN(bm.prices[j])||bm.prices[j]==null))j--;
+    if(j<0||bm.prices[j]===0)return '';
+    const ret=(bm.prices[i]/bm.prices[j]-1)*100;
     const col=ret>=0?'var(--green)':'var(--red)';
     const dir=ret>=0?'▲':'▼';
     return `<div class="today-bm-card" title="${BM_LBL[id]} — variación diaria">
@@ -5649,9 +5652,6 @@ async function renderTodayPage(){
   ytdRets.sort((a,b)=>b.ret-a.ret);
   const ytdTop3=ytdRets.slice(0,3), ytdBot3=ytdRets.slice(-3).reverse();
 
-  // Insight
-  const insight=_todayInsight();
-
   el.innerHTML=`
     <div class="today-hero">
       <div class="today-hero-left">
@@ -5659,11 +5659,6 @@ async function renderTodayPage(){
         <div class="today-date">${dateStr}</div>
       </div>
       ${freshLbl?`<span class="today-fresh-pill" style="color:${freshCol};border-color:${freshCol};">${freshLbl}</span>`:''}
-    </div>
-
-    <div class="today-insight" style="margin-bottom:10px;">
-      <div class="today-insight-label">Insight del día</div>
-      <div class="today-insight-text">${insight}</div>
     </div>
 
     ${bmCards?`<div class="today-bm-grid">${bmCards}</div>`:''}
@@ -6579,11 +6574,12 @@ function _renderFundModalComp(isin) {
 
   // ── Top holdings ──────────────────────────────────────────────────────────
   if (comp.holdings && comp.holdings.length > 0) {
+    const top20 = comp.holdings.slice(0, 20);
     html += `<div class="fmd-sub-title" style="margin-top:10px;">Top posiciones</div>
     <table class="fmd-holdings-tbl">
       <thead><tr><th>#</th><th>Nombre</th><th>ISIN</th><th>País</th><th>%</th></tr></thead>
       <tbody>`;
-    comp.holdings.forEach((h,i) => {
+    top20.forEach((h,i) => {
       html += `<tr>
         <td style="color:var(--text3)">${i+1}</td>
         <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${h.name||'—'}</td>
