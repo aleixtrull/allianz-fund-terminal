@@ -1223,9 +1223,9 @@ setInterval(updateClock,1000);updateClock();
 // ═══════════════════════════════════════════════════════════
 function openUpload(){document.getElementById('upload-overlay').style.display='flex';}
 const dz=document.getElementById('drop-zone');
-dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag');});
+if(dz){dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag');});
 dz.addEventListener('dragleave',()=>dz.classList.remove('drag'));
-dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag');processFiles(e.dataTransfer.files);});
+dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag');processFiles(e.dataTransfer.files);});}
 function handleFileSelect(e){processFiles(e.target.files);}
 
 function processFiles(files){
