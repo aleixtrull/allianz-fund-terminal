@@ -5620,7 +5620,7 @@ async function renderTodayPage(){
   el.innerHTML=`
     <div class="today-hero">
       <div class="today-hero-left">
-        <div class="today-greeting">${_todayGreeting()}, ${uname.split(' ')[0]}</div>
+        <div class="today-greeting">${_todayGreeting()}</div>
         <div class="today-date">${dateStr}</div>
       </div>
       ${freshLbl?`<span class="today-fresh-pill" style="color:${freshCol};border-color:${freshCol};">${freshLbl}</span>`:''}
