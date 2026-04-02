@@ -747,6 +747,8 @@ def main():
     parser.add_argument("--openfigi-key",    default="", dest="openfigi_key")
     parser.add_argument("--workers",         type=int, default=4, dest="workers",
                         help="Parallel workers for fund fetching (default: 4)")
+    parser.add_argument("--data-dir",        default=".", dest="data_dir",
+                        help="Directory for combined CSVs (nav_all_funds.csv, etc.) default: current dir")
     args = parser.parse_args()
 
     # En CI (GitHub Actions) forzar siempre modo --update para proteger el histórico
@@ -759,8 +761,10 @@ def main():
         run_debug()
         return
 
-    out_dir = Path(args.outdir)
+    out_dir  = Path(args.outdir)
     out_dir.mkdir(exist_ok=True)
+    data_dir = Path(args.data_dir)
+    data_dir.mkdir(parents=True, exist_ok=True)
 
     run_funds      = not args.only_benchmarks
     run_benchmarks = not args.only_funds
@@ -880,7 +884,7 @@ def main():
     # ── CSV COMBINADOS ────────────────────────────────────────────────────────
     # nav_all_funds.csv — fondos (ISINs como columnas)
     if run_funds and all_navs:
-        wide_path = Path("nav_all_funds.csv")
+        wide_path = data_dir / "nav_all_funds.csv"
         if wide_path.exists():
             try:
                 existing = pd.read_csv(wide_path, index_col=0, parse_dates=True)
@@ -899,7 +903,7 @@ def main():
 
     # nav_benchmarks.csv — benchmarks (IDs como columnas)
     if run_benchmarks and bm_navs:
-        bm_path = Path("nav_benchmarks.csv")
+        bm_path = data_dir / "nav_benchmarks.csv"
         if bm_path.exists():
             try:
                 existing_bm = pd.read_csv(bm_path, index_col=0, parse_dates=True)
@@ -929,8 +933,8 @@ def main():
 
     if rows:
         summary = pd.DataFrame(rows).sort_values("total_return_%", ascending=False)
-        summary.to_csv("nav_summary.csv", index=False)
-        print(f"  Metricas CSV    → nav_summary.csv")
+        summary.to_csv(data_dir / "nav_summary.csv", index=False)
+        print(f"  Metricas CSV    → {data_dir / 'nav_summary.csv'}")
 
         cols = ["name", "type", "years_of_data", "total_return_%", "cagr_%", "sharpe_ratio", "max_drawdown_%"]
         c = [x for x in cols if x in summary.columns]
@@ -945,7 +949,7 @@ def main():
         print("  " + "-" * 63)
         print(summary.sort_values("sharpe_ratio", ascending=False)[c].head(5).to_string(index=False))
 
-    print(f"\n  Listo. Archivos en: {out_dir.resolve()}\n")
+    print(f"\n  Listo. Archivos en: {data_dir.resolve()}\n")
 
 
 if __name__ == "__main__":
