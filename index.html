@@ -5553,6 +5553,7 @@ document.addEventListener('keydown',function(e){
     closeCmdK();
     closeHelpModal();
     if(document.getElementById('chart-fs-overlay').style.display==='flex') closeChartFullscreen();
+    if(document.getElementById('fund-modal-overlay')?.style.display==='flex') closeFundModal();
     return;
   }
   if((e.key==='f'||e.key==='F')&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){
@@ -6310,6 +6311,7 @@ function _renderFundModal(isin) {
   _renderFundModalMetrics(isin, _fmdPeriod);
   _renderFundModalChart(isin, _fmdPeriod);
   _renderFundModalBenchmark(isin, _fmdPeriod);
+  _renderFundModalNote(isin);
   _renderFundModalComp(isin);
 }
 
@@ -6398,6 +6400,23 @@ function _renderFundModalBenchmark(isin, period) {
 }
 
 
+
+// ── Fund modal note / conviction ─────────────────────────────────────────────
+
+function _renderFundModalNote(isin) {
+  const note = S.notes[isin];
+  const el = document.getElementById('fmd-note');
+  if (!note || (!note.note && !note.conviction)) {
+    el.innerHTML = '<div style="color:var(--text3);font-size:10px;">Sin nota.</div>';
+    return;
+  }
+  const conv = +note.conviction||0;
+  const stars = conv ? '★'.repeat(conv)+'☆'.repeat(5-conv) : '';
+  el.innerHTML = `
+    ${stars?`<div style="color:var(--accent);font-size:12px;margin-bottom:6px;">${stars}</div>`:''}
+    <div style="font-size:10px;color:var(--text2);line-height:1.6;">${note.note||'—'}</div>
+  `;
+}
 
 // ── Morningstar Composition — fund modal ─────────────────────────────────────
 
