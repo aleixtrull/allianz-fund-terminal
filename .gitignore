@@ -8,10 +8,10 @@ venv/
 # Individual fund CSVs (large, not needed for web)
 nav_data/
 
-# Root-level CSVs (moved to data/ by workflow)
-nav_all_funds.csv
-nav_benchmarks.csv
-nav_summary.csv
+# Root-level CSVs (legacy, now in data/)
+/nav_all_funds.csv
+/nav_benchmarks.csv
+/nav_summary.csv
 
 # Local dev
 .DS_Store
