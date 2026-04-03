@@ -344,7 +344,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:h
 .fund-modal-hdr{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;background:var(--bg1);z-index:1;}
 .fund-modal-body{padding:18px;display:flex;flex-direction:column;gap:14px;}
 .fmd-section{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:12px 14px;}
-.fmd-section-title{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:10px;font-weight:600;}
+.fmd-section-title{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:10px;font-weight:600;display:flex;align-items:center;justify-content:space-between;}
+.fmd-nav-date{font-size:7px;letter-spacing:.04em;text-transform:none;color:var(--text3);opacity:.7;font-weight:400;}
 .fmd-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
 .fmd-kpi{background:var(--bg3);border-radius:2px;padding:8px 10px;}
 .fmd-kpi-label{font-size:7px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px;}
@@ -967,30 +968,30 @@ input[type=file]{display:none;}
       </div>
       <div class="fund-modal-body">
         <div class="fmd-section">
-          <div class="fmd-section-title">Métricas por período</div>
+          <div class="fmd-section-title" id="fmd-title-metrics"><span>Métricas por período</span></div>
           <div class="fmd-period-tabs" id="fmd-period-tabs"></div>
           <div id="fmd-metrics"></div>
         </div>
         <div class="fmd-section">
-          <div class="fmd-section-title">Evolución NAV</div>
+          <div class="fmd-section-title" id="fmd-title-chart"><span>Evolución NAV</span></div>
           <div style="height:180px;position:relative;"><canvas id="fmd-chart"></canvas></div>
         </div>
         <div class="fmd-two-col">
           <div class="fmd-section">
-            <div class="fmd-section-title">vs. Benchmark</div>
+            <div class="fmd-section-title" id="fmd-title-benchmark"><span>vs. Benchmark</span></div>
             <div id="fmd-benchmark"></div>
           </div>
           <div class="fmd-section">
-            <div class="fmd-section-title">Nota</div>
+            <div class="fmd-section-title" id="fmd-title-note"><span>Nota</span></div>
             <div id="fmd-note"></div>
           </div>
         </div>
         <div class="fmd-section" id="fmd-comp-section" style="display:none;">
-          <div class="fmd-section-title">Composición (Morningstar)</div>
+          <div class="fmd-section-title" id="fmd-title-comp"><span>Composición (Morningstar)</span></div>
           <div id="fmd-comp"></div>
         </div>
         <div class="fmd-section" id="fmd-docs-section" style="display:none;">
-          <div class="fmd-section-title">Documentos</div>
+          <div class="fmd-section-title" id="fmd-title-docs"><span>Documentos</span></div>
           <div id="fmd-docs"></div>
         </div>
       </div>
@@ -6301,6 +6302,21 @@ function _renderFundModal(isin) {
   document.getElementById('fmd-dot').style.background = f.color;
   document.getElementById('fmd-name').textContent = f.name;
   document.getElementById('fmd-meta').textContent = `${isin} · ${f.cat} · ${f.dates?.[0]||'—'} → ${f.dates?.[f.dates.length-1]||'—'}`;
+
+  // Inject "Datos hasta DD/MM/AAAA" badge in every section title
+  const lastIso = f.dates?.[f.dates.length - 1] || '';
+  const _navDateBadge = lastIso
+    ? (() => { const [y,m,d] = lastIso.split('-'); return `<span class="fmd-nav-date">Datos hasta ${d}/${m}/${y}</span>`; })()
+    : '';
+  ['metrics','chart','benchmark','note','comp','docs'].forEach(id => {
+    const el = document.getElementById(`fmd-title-${id}`);
+    if (el) {
+      const span = el.querySelector('span');
+      // Remove any existing date badge before re-adding
+      el.querySelectorAll('.fmd-nav-date').forEach(n => n.remove());
+      if (_navDateBadge) el.insertAdjacentHTML('beforeend', _navDateBadge);
+    }
+  });
 
   const periods = [
     {key:'1m',label:'1M'},{key:'3m',label:'3M'},{key:'6m',label:'6M'},
