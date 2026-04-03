@@ -356,6 +356,16 @@ def fetch_benchmark(bm: dict, out_dir: Path, update_mode: bool) -> tuple:
             series.index = pd.to_datetime(series.index).normalize()
             series.name  = "nav"
 
+            # Remove yfinance dividend-adjustment artifacts: days with an
+            # impossible spike (>25%) that is immediately reversed the next day.
+            pct = series.pct_change()
+            nxt = pct.shift(-1)
+            spikes = (pct.abs() > 0.25) & (nxt.abs() > 0.12) & (pct * nxt < 0)
+            if spikes.any():
+                bad = spikes[spikes].index
+                print(f"    [outlier] {bm_id}: dropping {list(bad)}", file=sys.stderr)
+                series = series.drop(bad)
+
             if update_mode and csv_path.exists():
                 try:
                     existing = pd.read_csv(csv_path, index_col=0, parse_dates=True)
