@@ -202,6 +202,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:h
 .clock{font-family:var(--mono);color:var(--text);font-size:11px;letter-spacing:.08em;}
 .upload-btn{padding:4px 12px;background:var(--accent);color:var(--bg);font-family:var(--mono);font-size:10px;font-weight:600;border:none;cursor:pointer;letter-spacing:.06em;border-radius:2px;transition:background .15s;}
 .upload-btn:hover{background:#ffb930;}
+#presentation-exit{display:none;position:fixed;bottom:18px;right:18px;z-index:9999;padding:6px 14px;background:var(--bg2);border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);font-size:9px;cursor:pointer;border-radius:2px;letter-spacing:.06em;transition:all .2s;}
+#presentation-exit:hover{border-color:var(--accent);color:var(--accent);}
+body.presentation #presentation-exit{display:block;}
 
 /* LAYOUT */
 .app{display:flex;height:calc(100vh - 74px);overflow:hidden;}
@@ -772,7 +775,7 @@ input[type=file]{display:none;}
       <span id="offline-badge" style="display:none;font-size:8px;padding:2px 7px;background:rgba(231,76,60,.15);border:1px solid var(--red);color:var(--red);border-radius:2px;font-family:var(--mono);letter-spacing:.04em;" title="Sin conexión — datos en caché">● OFFLINE</span>
       <button id="pwa-install-btn" onclick="pwaInstall()" title="Instalar app" style="display:none;padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);font-size:9px;cursor:pointer;border-radius:2px;transition:all .2s;letter-spacing:.04em;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">⊕ APP</button>
       <button onclick="openHelpModal()" title="Atajos de teclado (?)" style="padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);font-size:9px;cursor:pointer;border-radius:2px;transition:all .2s;letter-spacing:.04em;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">?</button>
-      <button id="presentation-btn" onclick="togglePresentation()" title="Modo presentación (F)">⛶</button>
+      <button id="presentation-btn" onclick="togglePresentation()" title="Modo presentación (F)" style="padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);font-size:9px;cursor:pointer;border-radius:2px;transition:all .2s;letter-spacing:.04em;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">⛶</button>
       <button class="theme-btn" id="theme-toggle-btn" onclick="toggleTheme()" title="Cambiar tema">☀</button>
     </div>
   </div>
@@ -2705,7 +2708,6 @@ function toggleMobileSidebar(){
   else{
     sidebar.classList.add('mobile-open');
     overlay.classList.add('open');
-    document.getElementById('mob-btn-fondos').classList.add('active');
   }
 }
 
