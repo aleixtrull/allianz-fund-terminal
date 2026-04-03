@@ -7,3 +7,4 @@ supabase==2.*
 reportlab
 resend
 python-dotenv
+playwright
