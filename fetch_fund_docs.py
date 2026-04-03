@@ -157,15 +157,20 @@ def _ensure_pw_ctx():
     )
     # Aceptar cookies OneTrust y cerrar overlay de rol
     page = _pw_ctx.new_page()
-    page.goto("https://es.allianzgi.com/es-es/fondos/fondos/list/",
-              wait_until="networkidle", timeout=30000)
     try:
-        page.click('#onetrust-accept-btn-handler', timeout=5000)
-        page.wait_for_timeout(600)
-    except Exception:
-        pass
-    page.evaluate("document.getElementById('roleTnCOverlay')?.remove()")
-    page.close()
+        page.goto("https://es.allianzgi.com/es-es/fondos/fondos/list/",
+                  wait_until="domcontentloaded", timeout=60000)
+        try:
+            page.click('#onetrust-accept-btn-handler', timeout=5000)
+            page.wait_for_timeout(600)
+        except Exception:
+            pass
+        page.evaluate("document.getElementById('roleTnCOverlay')?.remove()")
+    except Exception as e:
+        print(f"  WARN: init es.allianzgi.com falló ({e}), continuando sin aceptar cookies",
+              file=sys.stderr)
+    finally:
+        page.close()
     return _pw_ctx
 
 
@@ -182,15 +187,20 @@ def _ensure_pw_lu_ctx():
                    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     )
     page = _pw_lu_ctx.new_page()
-    page.goto("https://lu.allianzgi.com/en-lu/b2c/our-funds/funds/list/",
-              wait_until="networkidle", timeout=30000)
     try:
-        page.click('#onetrust-accept-btn-handler', timeout=5000)
-        page.wait_for_timeout(600)
-    except Exception:
-        pass
-    page.evaluate("document.getElementById('roleTnCOverlay')?.remove()")
-    page.close()
+        page.goto("https://lu.allianzgi.com/en-lu/b2c/our-funds/funds/list/",
+                  wait_until="domcontentloaded", timeout=60000)
+        try:
+            page.click('#onetrust-accept-btn-handler', timeout=5000)
+            page.wait_for_timeout(600)
+        except Exception:
+            pass
+        page.evaluate("document.getElementById('roleTnCOverlay')?.remove()")
+    except Exception as e:
+        print(f"  WARN: init lu.allianzgi.com falló ({e}), continuando sin aceptar cookies",
+              file=sys.stderr)
+    finally:
+        page.close()
     return _pw_lu_ctx
 
 
@@ -226,7 +236,7 @@ def scrape_allianzgi_docs(slug: str,
     page = ctx.new_page()
     docs: dict[str, str] = {}
     try:
-        page.goto(url, wait_until="networkidle", timeout=30000)
+        page.goto(url, wait_until="domcontentloaded", timeout=60000)
         page.evaluate("document.getElementById('roleTnCOverlay')?.remove()")
         page.wait_for_timeout(1500)
         html = page.content()
