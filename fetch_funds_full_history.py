@@ -909,8 +909,10 @@ def main():
                 existing_bm = pd.read_csv(bm_path, index_col=0, parse_dates=True)
                 new_bm = pd.DataFrame(bm_navs)
                 new_bm.index = pd.to_datetime(new_bm.index)
-                combined_bm = pd.concat([existing_bm, new_bm])
-                bm_wide = combined_bm[~combined_bm.index.duplicated(keep="last")].sort_index()
+                # combine_first: new_bm wins where non-null, existing_bm fills the rest.
+                # This preserves history of any benchmark that failed to fetch this run,
+                # instead of overwriting its entire history with NaN.
+                bm_wide = new_bm.combine_first(existing_bm).sort_index()
             except Exception:
                 bm_wide = pd.DataFrame(bm_navs).sort_index()
                 bm_wide.index.name = "date"
