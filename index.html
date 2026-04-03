@@ -6306,7 +6306,7 @@ function _renderFundModal(isin) {
   // Inject "Datos hasta DD/MM/AAAA" badge in every section title
   const lastIso = f.dates?.[f.dates.length - 1] || '';
   const _navDateBadge = lastIso
-    ? (() => { const [y,m,d] = lastIso.split('-'); return `<span class="fmd-nav-date">Datos hasta ${d}/${m}/${y}</span>`; })()
+    ? (() => { const [y,m,d] = lastIso.split('-'); return `<span class="fmd-nav-date">Datos a ${d}/${m}/${y}</span>`; })()
     : '';
   ['metrics','chart','benchmark','note','comp','docs'].forEach(id => {
     const el = document.getElementById(`fmd-title-${id}`);
