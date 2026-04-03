@@ -343,7 +343,7 @@ def fetch_benchmark(bm: dict, out_dir: Path, update_mode: bool) -> tuple:
             hist = t.history(
                 start=start_dt.strftime("%Y-%m-%d"),
                 end=HISTORY_END.strftime("%Y-%m-%d"),
-                auto_adjust=True,
+                auto_adjust=False,  # ETFs de acumulación ya incluyen dividendos en el precio
                 actions=False,
             )
             min_rows = 1 if update_mode else 5
