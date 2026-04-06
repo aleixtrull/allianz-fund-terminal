@@ -5624,6 +5624,7 @@ async function renderTodayPage(){
   const daysOld=latestDate?Math.round((Date.now()-new Date(latestDate+'T12:00:00'))/86400000):null;
   const freshCol=daysOld!==null&&daysOld<=3?'var(--green)':'var(--red)';
   const freshLbl=daysOld===0?'actualizados hoy':daysOld===1?'actualizados ayer':daysOld!==null?`hace ${daysOld} días`:'';
+  const latestDateFormatted = latestDate ? latestDate.split('-').reverse().join('/') : '';
 
   // Benchmarks grid
   const BM_SHOW=['BM_MSCI_WORLD','BM_SP500','BM_STOXX600','BM_IBEX35','BM_EURO_AGG'];
@@ -5671,18 +5672,18 @@ async function renderTodayPage(){
         <div class="today-greeting">${_todayGreeting()}</div>
         <div class="today-date">${dateStr}</div>
       </div>
-      ${freshLbl?`<span class="today-fresh-pill" style="color:${freshCol};border-color:${freshCol};">${freshLbl}</span>`:''}
+      ${freshLbl?`<span class="today-fresh-pill" style="color:${freshCol};border-color:${freshCol};">Últimos datos: ${latestDateFormatted} · ${freshLbl}</span>`:''}
     </div>
 
     ${bmCards?`<div class="today-bm-grid">${bmCards}</div>`:''}
 
     <div class="today-4col-grid">
       <div class="today-panel">
-        <div class="today-section-hdr"><div class="today-section-dot" style="background:var(--green);"></div><div class="today-section-title">▲ Hoy</div></div>
+        <div class="today-section-hdr"><div class="today-section-dot" style="background:var(--green);"></div><div class="today-section-title">▲ ${latestDateFormatted||'Hoy'}</div></div>
         <div class="today-movers-list">${top3.length?top3.map(x=>moverRow(x.isin,x.ret)).join(''):'<div class="today-empty">Sin datos</div>'}</div>
       </div>
       <div class="today-panel">
-        <div class="today-section-hdr"><div class="today-section-dot" style="background:var(--red);"></div><div class="today-section-title">▼ Hoy</div></div>
+        <div class="today-section-hdr"><div class="today-section-dot" style="background:var(--red);"></div><div class="today-section-title">▼ ${latestDateFormatted||'Hoy'}</div></div>
         <div class="today-movers-list">${bot3.length?bot3.map(x=>moverRow(x.isin,x.ret)).join(''):'<div class="today-empty">Sin datos</div>'}</div>
       </div>
       <div class="today-panel">
