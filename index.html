@@ -6676,10 +6676,15 @@ function renderCompMorningstar() {
   if (!panel || !body) return;
 
   const isins = [...S.selected];
+  console.log('[comp-ms] selected:', isins);
+  console.log('[comp-ms] COMP_DATA keys:', Object.keys(COMP_DATA).length);
   const withData = isins.filter(i => {
     const c = COMP_DATA[i];
-    return c && Object.keys(c).length > 1;
+    const ok = c && Object.keys(c).length > 1;
+    console.log(`[comp-ms] ${i}: hasData=${!!c}, keys=${c ? Object.keys(c).length : 0}, ok=${ok}`);
+    return ok;
   });
+  console.log('[comp-ms] withData:', withData);
 
   if (withData.length === 0) {
     panel.style.display = 'none';
