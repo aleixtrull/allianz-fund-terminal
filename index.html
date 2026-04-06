@@ -6620,7 +6620,9 @@ function _renderFundModalComp(isin) {
     html += `</tbody></table>`;
   }
 
-  html += `<div style="font-size:8px;color:var(--text3);margin-top:8px;text-align:right;">Fuente: Morningstar · ${comp.updated||''}</div>`;
+  const f = S.funds[isin];
+  const lastNavDate = f?.dates?.[f.dates.length - 1] || '';
+  html += `<div style="font-size:8px;color:var(--text3);margin-top:8px;text-align:right;">Fuente: Morningstar · Último VL: ${lastNavDate}</div>`;
   el.innerHTML = html;
 }
 
