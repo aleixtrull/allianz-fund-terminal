@@ -99,7 +99,6 @@ FUNDS = [
     {"isin": "LU3034475049", "name": "Allianz Dynamic Multi Asset Strategy SRI 50", "cat": "Mixed"},
     {"isin": "LU3034475122", "name": "Allianz Dynamic Multi Asset Strategy SRI 75", "cat": "Mixed"},
     # ── Clases Unit Linked (UL) — share classes distintas comercializadas en seguro ──
-    {"isin": "ES0108282007", "name": "Allianz Multi Asset Global 85",                       "cat": "Mixed"},
     {"isin": "LU1462192417", "name": "Allianz Dynamic Multi Asset Strategy SRI 50 CT",     "cat": "Mixed"},
     {"isin": "LU1462192250", "name": "Allianz Dynamic Multi Asset Strategy SRI 15 CT",     "cat": "Mixed"},
     {"isin": "LU1228143191", "name": "Allianz Best Styles US Equity CT",                    "cat": "Equity US"},
