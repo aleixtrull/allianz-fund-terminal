@@ -1108,7 +1108,7 @@ function _refreshCurrentPage(){
   const pg=S.currentPage;
   if(!pg||pg==='today')         { _safe(renderTodayPage,'today'); }
   else if(pg==='performance')   { _safe(renderPerfFullTable,'perfTable'); }
-  else if(pg==='overview')      { _safe(renderKPIs,'kpis'); _safe(renderChartSelector,'chartSelector'); _safe(renderMainChart,'mainChart'); _safe(renderReturnsTable,'returnsTable'); _safe(renderRollingReturns,'rollingReturns'); _safe(renderCompare,'compare'); _safe(renderCompMorningstar,'compMstar'); }
+  else if(pg==='overview')      { console.log('=== OVERVIEW PAGE RENDERING ==='); _safe(renderKPIs,'kpis'); _safe(renderChartSelector,'chartSelector'); _safe(renderMainChart,'mainChart'); _safe(renderReturnsTable,'returnsTable'); _safe(renderRollingReturns,'rollingReturns'); _safe(renderCompare,'compare'); _safe(renderCompMorningstar,'compMstar'); }
 }
 
 // Known benchmark metadata (name + category label)
