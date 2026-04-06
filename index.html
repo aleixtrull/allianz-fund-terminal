@@ -6622,7 +6622,8 @@ function _renderFundModalComp(isin) {
 
   const f = S.funds[isin];
   const lastNavDate = f?.dates?.[f.dates.length - 1] || '';
-  html += `<div style="font-size:8px;color:var(--text3);margin-top:8px;text-align:right;">Fuente: Morningstar · Último VL: ${lastNavDate}</div>`;
+  const fmtDate = lastNavDate ? lastNavDate.split('-').reverse().join('/') : '';
+  html += `<div style="font-size:8px;color:var(--text3);margin-top:8px;text-align:right;">Fuente: Morningstar · ${fmtDate}</div>`;
   el.innerHTML = html;
 }
 
