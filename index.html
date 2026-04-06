@@ -1858,6 +1858,7 @@ function toggleSelectAndFocus(isin){
   renderKPIs();
   renderReturnsTable();
   renderCompare();
+  renderCompMorningstar();
 }
 function clearAllSelected(){
   S.selected.clear();
@@ -1868,6 +1869,7 @@ function clearAllSelected(){
   document.getElementById('chart-legend-strip').innerHTML='<span style="font-size:9px;color:var(--text3);">Selecciona fondos en el panel izquierdo</span>';
   renderReturnsTable();
   renderCompare();
+  renderCompMorningstar();
 }
 
 function selectAllVisible(){
