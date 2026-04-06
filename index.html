@@ -797,6 +797,7 @@ input[type=file]{display:none;}
       <button class="nav-btn active" id="nav-today-btn" onclick="showPage('today')">Home</button>
       <button class="nav-btn" onclick="showPage('performance')">Performance</button>
       <button class="nav-btn" onclick="showPage('overview')">Comparador Fondos</button>
+      <button class="nav-btn" onclick="showPage('benchmark')">Comparador Benchmark</button>
     </nav>
     <div class="period-bar">
       <span class="pbar-label">PERIODO</span>
@@ -944,6 +945,62 @@ input[type=file]{display:none;}
           <div class="panel-title"><span class="ptd"></span>Ficha Morningstar</div>
         </div>
         <div class="panel-body" id="comp-ms-body"></div>
+      </div>
+    </div>
+
+    <!-- COMPARADOR BENCHMARK -->
+    <div class="page" id="page-benchmark">
+      <div class="panel">
+        <div class="panel-hdr">
+          <div class="panel-title"><span class="ptd"></span>Análisis vs Benchmark</div>
+          <input type="file" id="bm-file-input" accept=".csv" style="display:none" onchange="loadBenchmarkCSV(event)">
+        </div>
+        <div class="panel-body">
+          <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;align-items:center;">
+            <div>
+              <span style="font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;margin-right:6px;">Benchmark:</span>
+              <select id="bm-select" onchange="renderBenchmark()" style="background:var(--bg2);border:1px solid var(--border2);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 8px;border-radius:2px;outline:none;">
+                <option value="">— Selecciona un benchmark —</option>
+              </select>
+            </div>
+            <div>
+              <span style="font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em;margin-right:6px;">Fondo:</span>
+              <select id="bm-fund-select" onchange="renderBenchmark()" style="background:var(--bg2);border:1px solid var(--border2);color:var(--text);font-family:var(--mono);font-size:10px;padding:4px 8px;border-radius:2px;outline:none;">
+                <option value="">— Selecciona un fondo —</option>
+              </select>
+            </div>
+          </div>
+          <div id="bm-not-loaded" style="color:var(--text3);font-size:11px;font-family:var(--sans);padding:12px 0;">
+            Carga primero <code>nav_benchmarks.csv</code> (generado por el script Python con <code>--only-benchmarks</code>).
+          </div>
+          <div id="bm-loaded" style="display:none;">
+            <div id="bm-chart-legend" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:8px;"></div>
+            <div class="chart-area" style="height:260px;"><canvas id="bm-chart"></canvas></div>
+          </div>
+        </div>
+      </div>
+      <div class="kpi-row" id="bm-kpi-row" style="display:none;"></div>
+      <div class="grid-2" id="bm-detail-grid" style="display:none;">
+        <div class="panel">
+          <div class="panel-hdr"><div class="panel-title"><span class="ptd"></span>Métricas vs benchmark</div></div>
+          <div class="panel-body" style="overflow-x:auto;"><table class="data-table" id="bm-metrics-table"></table></div>
+        </div>
+        <div class="panel">
+          <div class="panel-hdr"><div class="panel-title"><span class="ptd"></span>Retornos rolling vs benchmark</div></div>
+          <div class="panel-body"><div class="chart-area" style="height:180px;"><canvas id="bm-rolling-chart"></canvas></div></div>
+        </div>
+      </div>
+      <div class="panel" id="bm-all-panel" style="display:none;">
+        <div class="panel-hdr">
+          <div class="panel-title"><span class="ptd"></span>Todos los fondos vs benchmark seleccionado</div>
+          <div style="display:flex;gap:6px;align-items:center;">
+            <span style="font-size:9px;color:var(--text3);">Ordenado por alfa vs benchmark</span>
+            <button onclick="exportBenchmarkCSV()" style="font-size:9px;padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);cursor:pointer;border-radius:2px;" onmouseover="this.style.borderColor='var(--green)';this.style.color='var(--green)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">↓ CSV</button>
+            <button onclick="exportBenchmarkExcel()" style="font-size:9px;padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);cursor:pointer;border-radius:2px;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">↓ Excel</button>
+            <button onclick="exportBenchmarkPDF()" style="font-size:9px;padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);cursor:pointer;border-radius:2px;" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">↓ PDF</button>
+          </div>
+        </div>
+        <div class="panel-body" style="overflow-x:auto;"><table class="data-table" id="bm-all-table"></table></div>
       </div>
     </div>
 
@@ -1121,6 +1178,7 @@ function _refreshCurrentPage(){
   if(!pg||pg==='today')         { _safe(renderTodayPage,'today'); }
   else if(pg==='performance')   { _safe(renderPerfFullTable,'perfTable'); }
   else if(pg==='overview')      { console.log('=== OVERVIEW PAGE RENDERING ==='); _safe(renderKPIs,'kpis'); _safe(renderChartSelector,'chartSelector'); _safe(renderMainChart,'mainChart'); _safe(renderReturnsTable,'returnsTable'); _safe(renderRollingReturns,'rollingReturns'); _safe(renderCompare,'compare'); _safe(renderCompMorningstar,'compMstar'); }
+  else if(pg==='benchmark')     { if(document.getElementById('bm-select')?.value) _safe(renderBenchmark,'benchmark'); _safe(()=>populateBenchmarkSelectors(),'bmSel'); }
 }
 
 // Known benchmark metadata (name + category label)
@@ -1533,6 +1591,9 @@ function renderCurrentPage(){
     _safe(renderRollingReturns,'rollingReturns');
     _safe(renderCompare,'compare');
     _safe(renderCompMorningstar,'compMstar');
+  } else if(pg==='benchmark'){
+    if(document.getElementById('bm-select')?.value) _safe(renderBenchmark,'benchmark');
+    _safe(()=>populateBenchmarkSelectors(),'bmSel');
   }
 }
 
@@ -1570,6 +1631,9 @@ function renderAll(){
     _safe(renderRollingReturns,'rollingReturns');
     _safe(renderCompare,'compare');
     _safe(renderCompMorningstar,'compMstar');
+  } else if(pg==='benchmark'){
+    if(document.getElementById('bm-select')?.value) _safe(renderBenchmark,'benchmark');
+    _safe(()=>populateBenchmarkSelectors(),'bmSel');
   }
   // ── Session restore — runs once on first renderAll call ──────────────
   if(!_sessionRestored){
@@ -2705,6 +2769,10 @@ function showPage(page){
     try{renderRollingReturns();}catch(e){console.warn('overview:rollingReturns',e);}
     try{renderCompare();}catch(e){console.warn('overview:compareBars',e);}
   }
+  if(page==='benchmark'){
+    if(document.getElementById('bm-select')?.value) renderBenchmark();
+    populateBenchmarkSelectors();
+  }
   if(page==='today'){renderTodayPage();}
   pushState();
 }
@@ -2741,6 +2809,7 @@ function closeMobileSidebar(){
 const _MOB_ALL_PAGES = [
   {id:'performance', label:'Perf.',      icon:'<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>'},
   {id:'overview',    label:'Comparador', icon:'<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>'},
+  {id:'benchmark',   label:'Benchmark',  icon:'<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>'},
 ];
 function toggleMobMore(){
   const sheet   = document.getElementById('mob-more-sheet');
@@ -2773,7 +2842,7 @@ function closeMobMore(){
 
 // ─── Swipe navigation (called from DOMContentLoaded) ────────
 function _initSwipe(){
-  const NAV_ORDER = ['today','performance','overview'];
+  const NAV_ORDER = ['today','performance','overview','benchmark'];
   let sx=0, sy=0;
   const main = document.querySelector('.main');
   if(!main) return;
@@ -5985,6 +6054,10 @@ function _proposalRenderSection(n){
     <button class="mob-btn" id="mob-btn-overview" onclick="showPage('overview');setMobActive(this)">
       <div class="mob-btn-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
       Comparador
+    </button>
+    <button class="mob-btn" id="mob-btn-benchmark" onclick="showPage('benchmark');setMobActive(this)">
+      <div class="mob-btn-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+      Benchmark
     </button>
     <button class="mob-btn" id="mob-btn-more" onclick="toggleMobMore()">
       <div class="mob-btn-icon"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></div>
