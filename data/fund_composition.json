@@ -12602,218 +12602,211 @@
   "ES0108192008": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 17.1,
+    "aum_m": 17.9,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
-      "equity": 73.95,
-      "bonds": 47.52,
-      "cash": -21.47,
+      "equity": 75.82,
+      "bonds": 45.76,
+      "cash": -21.58,
       "other": 0.0
     },
     "geo": {
-      "northAmerica": 0.83,
-      "unitedKingdom": 2.1,
-      "europeDeveloped": 97.07
+      "northAmerica": 0.7,
+      "unitedKingdom": 1.86,
+      "europeDeveloped": 97.44
     },
     "sectors": {
       "type": "EQUITY",
       "data": {
-        "basicMaterials": 5.24,
-        "consumerCyclical": 10.77,
-        "financialServices": 32.69,
-        "realEstate": 4.74,
-        "communicationServices": 1.97,
-        "energy": 5.17,
-        "industrials": 20.19,
-        "technology": 3.06,
-        "consumerDefensive": 0.72,
-        "healthcare": 0.48,
-        "utilities": 14.96
+        "basicMaterials": 4.76,
+        "consumerCyclical": 10.04,
+        "financialServices": 31.87,
+        "realEstate": 4.46,
+        "communicationServices": 2.07,
+        "energy": 7.14,
+        "industrials": 19.87,
+        "technology": 2.83,
+        "consumerDefensive": 0.74,
+        "healthcare": 0.45,
+        "utilities": 15.76
       }
     },
     "holdings": [
       {
-        "name": "Banco Santander SA",
-        "isin": "ES0113900J37",
-        "weight": 9.86,
-        "country": "Spain",
-        "sector": "Financial Services"
-      },
-      {
         "name": "Iberdrola SA",
         "isin": "ES0144580Y14",
-        "weight": 9.24,
+        "weight": 9.94,
         "country": "Spain",
         "sector": "Utilities"
       },
       {
+        "name": "Banco Santander SA",
+        "isin": "ES0113900J37",
+        "weight": 9.47,
+        "country": "Spain",
+        "sector": "Financial Services"
+      },
+      {
         "name": "Banco Bilbao Vizcaya Argentaria SA",
         "isin": "ES0113211835",
-        "weight": 7.65,
+        "weight": 7.71,
         "country": "Spain",
         "sector": "Financial Services"
       },
       {
         "name": "Industria De Diseno Textil SA Share From Split",
         "isin": "ES0148396007",
-        "weight": 6.99,
+        "weight": 6.61,
         "country": "Spain",
         "sector": "Consumer Cyclical"
       },
       {
-        "name": "CaixaBank SA",
-        "isin": "ES0140609019",
-        "weight": 4.18,
-        "country": "Spain",
-        "sector": "Financial Services"
-      },
-      {
         "name": "Repsol SA",
         "isin": "ES0173516115",
-        "weight": 3.82,
+        "weight": 5.41,
         "country": "Spain",
         "sector": "Energy"
       },
       {
+        "name": "CaixaBank SA",
+        "isin": "ES0140609019",
+        "weight": 4.41,
+        "country": "Spain",
+        "sector": "Financial Services"
+      },
+      {
         "name": "Ferrovial SE",
         "isin": "NL0015001FS8",
-        "weight": 3.19,
+        "weight": 3.05,
         "country": "Netherlands",
         "sector": "Industrials"
       },
       {
         "name": "ACS Actividades de Construccion y Servicios SA",
         "isin": "ES0167050915",
-        "weight": 2.26,
+        "weight": 2.36,
         "country": "Spain",
         "sector": "Industrials"
       },
       {
         "name": "Logista Integral SA",
         "isin": "ES0105027009",
-        "weight": 2.12,
+        "weight": 2.32,
         "country": "Spain",
         "sector": "Industrials"
       },
       {
         "name": "Aena SME SA",
         "isin": "ES0105046017",
-        "weight": 2.08,
+        "weight": 2.18,
         "country": "Spain",
         "sector": "Industrials"
       },
       {
         "name": "Construcciones y Auxiliar de Ferrocarriles SA",
         "isin": "ES0121975009",
-        "weight": 1.94,
+        "weight": 2.09,
         "country": "Spain",
         "sector": "Industrials"
       },
       {
         "name": "Acerinox SA",
         "isin": "ES0132105018",
-        "weight": 1.7,
+        "weight": 1.64,
         "country": "Spain",
         "sector": "Basic Materials"
-      },
-      {
-        "name": "Tubacex SA",
-        "isin": "ES0132945017",
-        "weight": 1.57,
-        "country": "Spain",
-        "sector": "Basic Materials"
-      },
-      {
-        "name": "Colonial Sfl Socimi SA Shs from reverse split",
-        "isin": "ES0139140174",
-        "weight": 1.56,
-        "country": "Spain",
-        "sector": "Real Estate"
-      },
-      {
-        "name": "International Consolidated Airlines Group SA",
-        "isin": "ES0177542018",
-        "weight": 1.55,
-        "country": "United Kingdom",
-        "sector": "Industrials"
-      },
-      {
-        "name": "Amadeus IT Group SA",
-        "isin": "ES0109067019",
-        "weight": 1.54,
-        "country": "Spain",
-        "sector": "Technology"
-      },
-      {
-        "name": "Cellnex Telecom SA",
-        "isin": "ES0105066007",
-        "weight": 1.48,
-        "country": "Spain",
-        "sector": "Real Estate"
       },
       {
         "name": "Telefonica SA",
         "isin": "ES0178430E18",
-        "weight": 1.46,
+        "weight": 1.57,
         "country": "Spain",
         "sector": "Communication Services"
       },
       {
+        "name": "Amadeus IT Group SA",
+        "isin": "ES0109067019",
+        "weight": 1.55,
+        "country": "Spain",
+        "sector": "Technology"
+      },
+      {
+        "name": "Colonial Sfl Socimi SA Shs from reverse split",
+        "isin": "ES0139140174",
+        "weight": 1.52,
+        "country": "Spain",
+        "sector": "Real Estate"
+      },
+      {
+        "name": "Tubacex SA",
+        "isin": "ES0132945017",
+        "weight": 1.44,
+        "country": "Spain",
+        "sector": "Basic Materials"
+      },
+      {
+        "name": "International Consolidated Airlines Group SA",
+        "isin": "ES0177542018",
+        "weight": 1.41,
+        "country": "United Kingdom",
+        "sector": "Industrials"
+      },
+      {
+        "name": "Cellnex Telecom SA",
+        "isin": "ES0105066007",
+        "weight": 1.4,
+        "country": "Spain",
+        "sector": "Real Estate"
+      },
+      {
         "name": "Banco de Sabadell SA",
         "isin": "ES0113860A34",
-        "weight": 1.18,
+        "weight": 1.22,
         "country": "Spain",
         "sector": "Financial Services"
       },
       {
-        "name": "Tecnicas Reunidas SA",
-        "isin": "ES0178165017",
-        "weight": 1.08,
-        "country": "Spain",
-        "sector": "Industrials"
-      },
-      {
         "name": "Endesa SA",
         "isin": "ES0130670112",
-        "weight": 0.98,
+        "weight": 1.12,
         "country": "Spain",
         "sector": "Utilities"
       },
       {
         "name": "Vidrala SA",
         "isin": "ES0183746314",
-        "weight": 0.98,
+        "weight": 1.0,
         "country": "Spain",
         "sector": "Consumer Cyclical"
       },
       {
-        "name": "Bankinter SA",
-        "isin": "ES0113679I37",
-        "weight": 0.83,
-        "country": "Spain",
-        "sector": "Financial Services"
-      },
-      {
-        "name": "Indra Sistemas SA SHS Class -A-",
-        "isin": "ES0118594417",
-        "weight": 0.72,
-        "country": "Spain",
-        "sector": "Technology"
-      },
-      {
-        "name": "Acciona SA",
-        "isin": "ES0125220311",
-        "weight": 0.7,
+        "name": "Tecnicas Reunidas SA",
+        "isin": "ES0178165017",
+        "weight": 0.98,
         "country": "Spain",
         "sector": "Industrials"
       },
       {
-        "name": "ArcelorMittal SA New Reg.Shs ex-Arcelor",
-        "isin": "LU1598757687",
-        "weight": 0.62,
-        "country": "United States",
-        "sector": "Basic Materials"
+        "name": "Bankinter SA",
+        "isin": "ES0113679I37",
+        "weight": 0.85,
+        "country": "Spain",
+        "sector": "Financial Services"
+      },
+      {
+        "name": "Acciona SA",
+        "isin": "ES0125220311",
+        "weight": 0.69,
+        "country": "Spain",
+        "sector": "Industrials"
+      },
+      {
+        "name": "Indra Sistemas SA SHS Class -A-",
+        "isin": "ES0118594417",
+        "weight": 0.6,
+        "country": "Spain",
+        "sector": "Technology"
       },
       {
         "name": "Redeia Corporacion SA",
@@ -12825,57 +12818,57 @@
       {
         "name": "Ebro Foods SA",
         "isin": "ES0112501012",
-        "weight": 0.53,
+        "weight": 0.56,
         "country": "Spain",
         "sector": "Consumer Defensive"
       },
       {
+        "name": "ArcelorMittal SA New Reg.Shs ex-Arcelor",
+        "isin": "LU1598757687",
+        "weight": 0.53,
+        "country": "United States",
+        "sector": "Basic Materials"
+      },
+      {
         "name": "Mapfre SA",
         "isin": "ES0124244E34",
-        "weight": 0.48,
+        "weight": 0.5,
         "country": "Spain",
         "sector": "Financial Services"
       },
       {
         "name": "Merlin Properties SOCIMI SA",
         "isin": "ES0105025003",
-        "weight": 0.46,
+        "weight": 0.47,
         "country": "Spain",
         "sector": "Real Estate"
       },
       {
         "name": "Grifols SA Participating Preferred",
         "isin": "ES0171996095",
-        "weight": 0.35,
+        "weight": 0.34,
         "country": "Spain",
         "sector": "Healthcare"
       },
       {
         "name": "Enagas SA",
         "isin": "ES0130960018",
-        "weight": 0.27,
+        "weight": 0.32,
         "country": "Spain",
         "sector": "Utilities"
       },
       {
-        "name": "Derechos:arcelor Mittal Steel",
+        "name": "30 Day Interbank Cash Rate Future Apr 26",
         "isin": null,
-        "weight": 0.0,
-        "country": null,
+        "weight": 23.36,
+        "country": "Australia",
         "sector": null
       },
       {
         "name": "Spain (Kingdom of) 1.91%",
-        "isin": "ES0000012K61",
-        "weight": 24.3,
+        "isin": "ES00000124C5",
+        "weight": 22.41,
         "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "30 Day Interbank Cash Rate Future Mar 26",
-        "isin": null,
-        "weight": 23.22,
-        "country": "Australia",
         "sector": null
       },
       {
@@ -12888,35 +12881,35 @@
       {
         "name": "Cuenta:banco Inversis, S.A.",
         "isin": null,
-        "weight": 0.16,
+        "weight": 0.19,
         "country": null,
         "sector": null
       },
       {
         "name": "Cash Offset For Derivatives:",
         "isin": null,
-        "weight": -23.22,
+        "weight": -23.36,
         "country": null,
         "sector": null
       }
     ],
     "equity_style": {
-      "earningsGrowth": 8.25,
-      "bookValueGrowth": 4.19,
+      "earningsGrowth": 4.25,
+      "bookValueGrowth": 4.29,
       "revenueGrowth": 5.64,
-      "dividendYield": 4.02
+      "dividendYield": 4.44
     },
     "market_cap": {
-      "avgCapB": 39.7,
-      "giant": 37.93,
-      "large": 18.37,
-      "medium": 14.14,
-      "small": 1.94,
-      "micro": 1.57
+      "avgCapB": 36.7,
+      "giant": 38.14,
+      "large": 20.05,
+      "medium": 13.13,
+      "small": 3.07,
+      "micro": 1.44
     },
     "ownership_zone": {
-      "sizeScore": 259.78,
-      "styleScore": 110.53
+      "sizeScore": 255.87,
+      "styleScore": 107.5
     },
     "fi_style": {
       "duration": null,
@@ -12929,22 +12922,22 @@
   "ES0108203003": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 191.0,
+    "aum_m": 190.3,
     "aum_currency": "EUR",
     "srri": 2,
     "asset_alloc": {
       "equity": 0.0,
-      "bonds": 51.33,
-      "cash": 33.02,
-      "other": 15.64
+      "bonds": 59.08,
+      "cash": 29.93,
+      "other": 10.99
     },
     "sectors": {
       "type": "FIXEDINCOME",
       "data": {
-        "government": 12.37,
-        "corporate": 35.23,
-        "securitized": 7.44,
-        "cashAndEquivalents": 43.69
+        "government": 17.69,
+        "corporate": 32.57,
+        "securitized": 7.43,
+        "cashAndEquivalents": 41.18
       }
     },
     "holdings": [
@@ -14003,32 +13996,32 @@
   "ES0108232002": {
     "updated": "2026-04-09",
     "rating": 5,
-    "aum_m": 171.3,
+    "aum_m": 170.5,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
-      "equity": 81.66,
-      "bonds": 12.78,
-      "cash": 0.01,
-      "other": 5.56
+      "equity": 81.21,
+      "bonds": 13.91,
+      "cash": -0.15,
+      "other": 5.04
     },
     "geo": {
-      "northAmerica": 67.3,
-      "unitedKingdom": 6.85,
-      "europeDeveloped": 23.08,
-      "europeEmerging": 0.19,
-      "africaMiddleEast": 0.07,
-      "japan": 1.51,
-      "australasia": 0.44,
-      "asiaDeveloped": 0.4,
+      "northAmerica": 68.17,
+      "unitedKingdom": 6.78,
+      "europeDeveloped": 22.46,
+      "europeEmerging": 0.23,
+      "africaMiddleEast": 0.08,
+      "japan": 1.43,
+      "australasia": 0.43,
+      "asiaDeveloped": 0.27,
       "asiaEmerging": 0.1,
       "latinAmerica": 0.05
     },
     "holdings": [
       {
         "name": "Spain (Kingdom of) 1.91%",
-        "isin": "ES0000012K20",
-        "weight": 12.76,
+        "isin": "ES00000124C5",
+        "weight": 13.91,
         "country": "Spain",
         "sector": null
       },
@@ -14111,22 +14104,22 @@
       }
     ],
     "equity_style": {
-      "earningsGrowth": 5.87,
-      "bookValueGrowth": 4.73,
-      "revenueGrowth": 3.9,
-      "dividendYield": 1.89
+      "earningsGrowth": 6.39,
+      "bookValueGrowth": 4.78,
+      "revenueGrowth": 3.95,
+      "dividendYield": 2.14
     },
     "market_cap": {
-      "avgCapB": 159.1,
-      "giant": 35.44,
-      "large": 27.35,
-      "medium": 17.26,
-      "small": 1.28,
+      "avgCapB": 153.9,
+      "giant": 34.55,
+      "large": 27.42,
+      "medium": 17.65,
+      "small": 1.29,
       "micro": 0.0
     },
     "ownership_zone": {
-      "sizeScore": 291.42,
-      "styleScore": 141.22
+      "sizeScore": 290.0,
+      "styleScore": 140.41
     },
     "fi_style": {
       "duration": null,
@@ -14139,24 +14132,24 @@
   "ES0108240005": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 55.7,
+    "aum_m": 55.5,
     "aum_currency": "EUR",
     "srri": 4,
     "asset_alloc": {
-      "equity": 38.32,
-      "bonds": 51.08,
-      "cash": 4.28,
-      "other": 6.32
+      "equity": 36.98,
+      "bonds": 53.73,
+      "cash": 3.36,
+      "other": 5.93
     },
     "geo": {
-      "northAmerica": 67.07,
-      "unitedKingdom": 6.91,
-      "europeDeveloped": 23.25,
-      "europeEmerging": 0.2,
-      "africaMiddleEast": 0.07,
-      "japan": 1.52,
-      "australasia": 0.45,
-      "asiaDeveloped": 0.4,
+      "northAmerica": 68.0,
+      "unitedKingdom": 6.83,
+      "europeDeveloped": 22.62,
+      "europeEmerging": 0.23,
+      "africaMiddleEast": 0.08,
+      "japan": 1.41,
+      "australasia": 0.43,
+      "asiaDeveloped": 0.27,
       "asiaEmerging": 0.1,
       "latinAmerica": 0.05
     },
@@ -14282,45 +14275,45 @@
       }
     ],
     "equity_style": {
-      "earningsGrowth": 5.97,
-      "bookValueGrowth": 4.75,
-      "revenueGrowth": 3.89,
-      "dividendYield": 1.89
+      "earningsGrowth": 6.48,
+      "bookValueGrowth": 4.8,
+      "revenueGrowth": 3.93,
+      "dividendYield": 2.13
     },
     "market_cap": {
-      "avgCapB": 162.7,
-      "giant": 16.82,
-      "large": 12.88,
-      "medium": 7.9,
-      "small": 0.55,
+      "avgCapB": 157.9,
+      "giant": 15.92,
+      "large": 12.53,
+      "medium": 7.84,
+      "small": 0.54,
       "micro": 0.0
     },
     "ownership_zone": {
-      "sizeScore": 293.16,
-      "styleScore": 141.87
+      "sizeScore": 291.84,
+      "styleScore": 141.13
     },
     "fi_style": {
-      "duration": 3.08,
-      "maturity": 4.51,
+      "duration": 3.09,
+      "maturity": 4.38,
       "creditQuality": "A-",
-      "ytm": 2.49,
+      "ytm": 2.56,
       "styleBox": 4
     },
     "credit_quality": {
-      "AAA": 4.64,
-      "AA": 8.11,
-      "A": 38.07,
-      "BBB": 41.24,
-      "BB": 1.63,
+      "AAA": 4.32,
+      "AA": 7.98,
+      "A": 38.18,
+      "BBB": 41.66,
+      "BB": 1.38,
       "B": -0.02,
       "belowB": 0.01,
-      "notRated": 6.32
+      "notRated": 6.49
     }
   },
   "ES0108193006": {
     "updated": "2026-04-09",
     "rating": null,
-    "aum_m": 25.2,
+    "aum_m": 25.1,
     "aum_currency": "EUR",
     "srri": 2,
     "asset_alloc": {
@@ -14417,24 +14410,24 @@
   "ES0108373004": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 80.2,
+    "aum_m": 80.1,
     "aum_currency": "EUR",
     "srri": 3,
     "asset_alloc": {
-      "equity": 22.68,
-      "bonds": 55.41,
-      "cash": 19.32,
-      "other": 2.59
+      "equity": 21.9,
+      "bonds": 58.21,
+      "cash": 17.44,
+      "other": 2.45
     },
     "geo": {
-      "northAmerica": 67.28,
-      "unitedKingdom": 6.86,
-      "europeDeveloped": 23.07,
-      "europeEmerging": 0.19,
-      "africaMiddleEast": 0.07,
-      "japan": 1.53,
-      "australasia": 0.45,
-      "asiaDeveloped": 0.4,
+      "northAmerica": 68.21,
+      "unitedKingdom": 6.78,
+      "europeDeveloped": 22.45,
+      "europeEmerging": 0.23,
+      "africaMiddleEast": 0.08,
+      "japan": 1.42,
+      "australasia": 0.43,
+      "asiaDeveloped": 0.27,
       "asiaEmerging": 0.1,
       "latinAmerica": 0.05
     },
@@ -14449,98 +14442,98 @@
       {
         "name": "Amundi EUR Corporate Bd 0-3Y ESG ETF DRC",
         "isin": "LU2037748774",
-        "weight": 17.06,
+        "weight": 17.21,
         "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "Amundi Euro Liquidity Select IC C",
         "isin": "FR0010251660",
-        "weight": 13.16,
+        "weight": 13.4,
         "country": "France",
         "sector": null
       },
       {
         "name": "iShares Core € Corp Bond ETF EUR Dist",
         "isin": "IE00B3F81R35",
-        "weight": 8.91,
+        "weight": 8.86,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Amundi Ultra Short Term Bond Rsp I C",
         "isin": "FR0011088657",
-        "weight": 8.13,
+        "weight": 8.26,
         "country": "France",
         "sector": null
       },
       {
         "name": "Invesco S&P 500 ETF",
         "isin": "IE00B3YCGJ38",
-        "weight": 6.58,
+        "weight": 6.43,
         "country": "Ireland",
+        "sector": null
+      },
+      {
+        "name": "Pictet-EUR Short Term Corp Bds J EUR",
+        "isin": "LU1634531427",
+        "weight": 5.61,
+        "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "Amundi Core Stoxx Eurp 600 ETF Acc",
         "isin": "LU0908500753",
-        "weight": 5.95,
+        "weight": 5.59,
         "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "iShares Core MSCI World ETF USD Acc",
         "isin": "IE00B4L5Y983",
-        "weight": 5.65,
-        "country": "Ireland",
-        "sector": null
-      },
-      {
-        "name": "Pictet-EUR Short Term Corp Bds I",
-        "isin": "LU0954602677",
-        "weight": 5.6,
-        "country": "Luxembourg",
-        "sector": null
-      },
-      {
-        "name": "iShares S&P 500 Swap ETF USD Acc",
-        "isin": "IE00BMTX1Y45",
-        "weight": 2.39,
+        "weight": 5.47,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "AXA IM Euro Liquidity SRI",
         "isin": "FR0000978371",
-        "weight": 2.37,
+        "weight": 2.42,
         "country": "France",
+        "sector": null
+      },
+      {
+        "name": "iShares S&P 500 Swap ETF USD Acc",
+        "isin": "IE00BMTX1Y45",
+        "weight": 2.34,
+        "country": "Ireland",
         "sector": null
       },
       {
         "name": "iShares S&P 500 Equal Weight ETF USD Acc",
         "isin": "IE000MLMNYS0",
-        "weight": 2.16,
-        "country": "Ireland",
-        "sector": null
-      },
-      {
-        "name": "iShares Physical Gold ETC",
-        "isin": "IE00B4ND3602",
-        "weight": 2.03,
+        "weight": 2.1,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "JPM EUR IG Corp Bd Act ETF EUR Acc",
         "isin": "IE00BF59RX87",
-        "weight": 2.02,
+        "weight": 2.01,
+        "country": "Ireland",
+        "sector": null
+      },
+      {
+        "name": "iShares Physical Gold ETC",
+        "isin": "IE00B4ND3602",
+        "weight": 1.87,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Nordea 1 - Low Dur Eurp Cov Bd BI EUR",
         "isin": "LU1694214633",
-        "weight": 1.51,
+        "weight": 1.52,
         "country": "Luxembourg",
         "sector": null
       },
@@ -14554,34 +14547,34 @@
       {
         "name": "Cash & Cash Equivalents:",
         "isin": null,
-        "weight": -0.34,
+        "weight": -0.33,
         "country": null,
         "sector": null
       }
     ],
     "equity_style": {
-      "earningsGrowth": 5.94,
-      "bookValueGrowth": 4.76,
-      "revenueGrowth": 3.9,
-      "dividendYield": 1.89
+      "earningsGrowth": 6.46,
+      "bookValueGrowth": 4.81,
+      "revenueGrowth": 3.95,
+      "dividendYield": 2.13
     },
     "market_cap": {
-      "avgCapB": 161.6,
-      "giant": 9.9,
-      "large": 7.62,
-      "medium": 4.72,
-      "small": 0.34,
+      "avgCapB": 156.7,
+      "giant": 9.38,
+      "large": 7.41,
+      "medium": 4.69,
+      "small": 0.33,
       "micro": 0.0
     },
     "ownership_zone": {
-      "sizeScore": 285.93,
-      "styleScore": 141.6
+      "sizeScore": 282.55,
+      "styleScore": 140.85
     },
     "fi_style": {
       "duration": 2.32,
-      "maturity": 3.81,
+      "maturity": 3.7,
       "creditQuality": "A-",
-      "ytm": 2.75,
+      "ytm": 2.98,
       "styleBox": 4
     },
     "credit_quality": {
@@ -93971,21 +93964,21 @@
   "ES0108283005": {
     "updated": "2026-04-09",
     "rating": null,
-    "aum_m": 12.5,
+    "aum_m": 13.4,
     "aum_currency": "EUR",
     "srri": 2,
     "asset_alloc": {
       "equity": 0.0,
-      "bonds": 39.9,
-      "cash": 23.42,
-      "other": 36.67
+      "bonds": 47.59,
+      "cash": 12.55,
+      "other": 39.86
     },
     "sectors": {
       "type": "FIXEDINCOME",
       "data": {
-        "government": 48.1,
-        "corporate": 9.03,
-        "cashAndEquivalents": 42.86
+        "government": 62.61,
+        "corporate": 6.66,
+        "cashAndEquivalents": 30.72
       }
     },
     "holdings": [
@@ -94086,21 +94079,21 @@
       "styleScore": 0.0
     },
     "fi_style": {
-      "duration": 0.16,
+      "duration": 0.15,
       "maturity": 0.2,
       "creditQuality": null,
-      "ytm": 1.84,
+      "ytm": 1.83,
       "styleBox": null
     },
     "credit_quality": {
-      "AAA": 2.17,
-      "AA": 10.93,
-      "A": 46.61,
-      "BBB": 14.38,
-      "BB": 0.1,
+      "AAA": 1.37,
+      "AA": 11.02,
+      "A": 47.91,
+      "BBB": 13.73,
+      "BB": 0.11,
       "B": 0.03,
       "belowB": 0.0,
-      "notRated": 25.77
+      "notRated": 25.82
     }
   },
   "LU2958546181": {
