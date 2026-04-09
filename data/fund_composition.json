@@ -2,7 +2,7 @@
   "LU3270886024": {
     "updated": "2026-04-09",
     "rating": null,
-    "aum_m": 0.9,
+    "aum_m": 1.0,
     "aum_currency": "EUR",
     "srri": 4,
     "asset_alloc": {
@@ -11766,7 +11766,7 @@
   "LU0348740696": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 4.8,
+    "aum_m": 4.7,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -12943,582 +12943,624 @@
     "holdings": [
       {
         "name": "Spain (Kingdom of) 1.91%",
-        "isin": "ES0000012M85",
-        "weight": 1.87,
+        "isin": "ES0000012A89",
+        "weight": 6.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Metrovacesa SA 4.85%",
+        "name": "Spain (Kingdom of) 2.53%",
+        "isin": "ES0L02703053",
+        "weight": 2.56,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Metrovacesa SA 3.02%",
         "isin": "ES0505122442",
-        "weight": 1.04,
+        "weight": 1.0,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ence Energia y Celulosa S.A. 4.1%",
         "isin": "ES0330625007",
-        "weight": 0.86,
+        "weight": 0.77,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Sacyr SA 3.3%",
         "isin": "ES0582870P98",
-        "weight": 0.65,
+        "weight": 0.6,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Greenalia SA 7%",
         "isin": "NO0013684563",
-        "weight": 0.57,
+        "weight": 0.52,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Prosegur Cash SA 3.38%",
         "isin": "ES0305229009",
-        "weight": 0.57,
+        "weight": 0.51,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Acciona Financiacion Filiales SA 1.86%",
         "isin": "XS2300169419",
-        "weight": 0.54,
+        "weight": 0.49,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Sacyr SA 9.58%",
         "isin": "ES0582870P56",
-        "weight": 0.52,
+        "weight": 0.47,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Tecnicas Reunidas SA 5.15%",
         "isin": "ES0378165023",
-        "weight": 0.51,
+        "weight": 0.47,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "General De Alquiler De Maquinaria SA 5.25%",
         "isin": "ES0241571019",
-        "weight": 0.51,
+        "weight": 0.46,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Eroski Sociedad Cooperativa 2.63%",
+        "isin": "ES0531429209",
+        "weight": 0.31,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "COX Abg Group SA 4.37%",
         "isin": "ES0505848087",
-        "weight": 0.33,
+        "weight": 0.3,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Sacyr SA 4.75%",
         "isin": "XS3071337847",
-        "weight": 0.3,
+        "weight": 0.27,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Maire S.p.A. 4%",
         "isin": "XS3207981161",
-        "weight": 0.29,
+        "weight": 0.26,
         "country": "Italy",
         "sector": null
       },
       {
-        "name": "Grupo Pikolin S.L 5.65%",
-        "isin": "ES0305072029",
-        "weight": 0.29,
+        "name": "Colonial SFL Socimi SA 4.03%",
+        "isin": "XS3320133781",
+        "weight": 0.26,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ferroglobe PLC 4.35%",
         "isin": "ES0505864118",
-        "weight": 0.28,
+        "weight": 0.26,
         "country": "United States",
+        "sector": null
+      },
+      {
+        "name": "Grupo Pikolin S.L 5.65%",
+        "isin": "ES0305072029",
+        "weight": 0.26,
+        "country": "Spain",
         "sector": null
       },
       {
         "name": "Nexus Energia, S.A 3.44%",
         "isin": "ES05052800B8",
-        "weight": 0.28,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Amper SA 5.74%",
-        "isin": "ES05092601D8",
-        "weight": 0.28,
+        "weight": 0.26,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Atlantica Infraestructura Sostenible S L U 3.9%",
         "isin": "ES0505869182",
-        "weight": 0.28,
+        "weight": 0.25,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Amper SA 5.74%",
+        "isin": "ES05092601D8",
+        "weight": 0.25,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Masmovil Ibercom S.A. 3.6%",
         "isin": "ES05846961R5",
-        "weight": 0.28,
+        "weight": 0.25,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Cooperativas Orensanas Sociedad Cooperativa Limitada 3.73%",
         "isin": "ES0505446544",
-        "weight": 0.27,
+        "weight": 0.25,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ontime Corporate Union S.L. 4.4%",
         "isin": "ES0505604621",
-        "weight": 0.27,
+        "weight": 0.25,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "COX Abg Group SA 4.6%",
         "isin": "ES0505848129",
-        "weight": 0.27,
+        "weight": 0.25,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Sacyr SA 3.55%",
         "isin": "ES0582870P23",
-        "weight": 0.27,
+        "weight": 0.25,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "COX Abg Group SA 4.65%",
+        "isin": "ES0505848152",
+        "weight": 0.25,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Amper SA 5.9%",
         "isin": "ES05092601A4",
-        "weight": 0.27,
+        "weight": 0.24,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ence Energia y Celulosa S.A. 3.59%",
         "isin": "ES0530625377",
-        "weight": 0.27,
+        "weight": 0.24,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Tecnicas Reunidas SA 5.4%",
         "isin": "ES0378165015",
-        "weight": 0.23,
+        "weight": 0.21,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ecoener SA 4.38%",
         "isin": "ES0505548372",
-        "weight": 0.22,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "General De Alquiler De Maquinaria SA 3.48%",
-        "isin": "ES0541571545",
-        "weight": 0.22,
+        "weight": 0.2,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Inmobiliaria del Sur S.A. 3.95%",
         "isin": "ES0554653560",
-        "weight": 0.22,
+        "weight": 0.2,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "General De Alquiler De Maquinaria SA 3.48%",
+        "isin": "ES0541571545",
+        "weight": 0.2,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Grenergy Renovables Sa 5%",
+        "isin": "ES0305079024",
+        "weight": 0.16,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Visalia Energia SL 4%",
+        "isin": "ES0505703357",
+        "weight": 0.16,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Visalia Energia SL 7.25%",
         "isin": "ES0305703003",
-        "weight": 0.17,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Canadian Imperial Bank of Commerce 3.25%",
-        "isin": "XS3118936452",
-        "weight": 0.17,
-        "country": "Canada",
-        "sector": null
-      },
-      {
-        "name": "Visalia Energia SL 4%",
-        "isin": "ES0505703357",
-        "weight": 0.17,
+        "weight": 0.16,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Arquimea Group SA 3.53%",
         "isin": "ES0505629255",
-        "weight": 0.17,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Audax Renovables SA 3.5%",
         "isin": "ES05364630H9",
-        "weight": 0.17,
+        "weight": 0.15,
         "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Canadian Imperial Bank of Commerce 3.25%",
+        "isin": "XS3118936452",
+        "weight": 0.15,
+        "country": "Canada",
         "sector": null
       },
       {
         "name": "Agotzaina SL 3.7%",
         "isin": "ES0505695322",
-        "weight": 0.17,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Nueva Expresion Textil SA 7.33%",
-        "isin": "ES0526962024",
-        "weight": 0.17,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Gestamp Automocion S A 2.91%",
-        "isin": "ES0505223521",
-        "weight": 0.17,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Gestamp Automocion S A 2.87%",
         "isin": "ES0505223398",
-        "weight": 0.17,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Tubacex Sa 3.15%",
-        "isin": "ES05329456N1",
-        "weight": 0.17,
+        "name": "Gestamp Automocion S A 2.91%",
+        "isin": "ES0505223521",
+        "weight": 0.15,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Nueva Expresion Textil SA 7.33%",
+        "isin": "ES0526962024",
+        "weight": 0.15,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Im Fortia 1 Fondo De Titulizacion 3%",
+        "isin": "ES0505087991",
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "General De Alquiler De Maquinaria SA 3.35%",
         "isin": "ES0541571503",
-        "weight": 0.17,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Premier Espana SA 3.6%",
         "isin": "ES0505531345",
-        "weight": 0.17,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Gestamp Automocion S A 3.03%",
-        "isin": "ES0505223539",
-        "weight": 0.17,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Masmovil Ibercom S.A. 3.47%",
         "isin": "ES05846961K0",
-        "weight": 0.17,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "COX Abg Group SA 4.78%",
-        "isin": "ES0505848061",
-        "weight": 0.16,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Atlantica Infraestructura Sostenible S L U 3.56%",
         "isin": "ES0505869158",
-        "weight": 0.16,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Izertis S A 3.65%",
         "isin": "ES0505449258",
-        "weight": 0.16,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Atlantica Infraestructura Sostenible S L U 3.65%",
-        "isin": "ES0505869166",
-        "weight": 0.16,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Ontime Corporate Union S.L. 4.27%",
-        "isin": "ES0505604571",
-        "weight": 0.16,
+        "name": "Amper SA 4.64%",
+        "isin": "ES05092600U4",
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "The Nimo's Holding SL 4.2%",
         "isin": "ES0505555724",
-        "weight": 0.16,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Ecoener SA 4.95%",
-        "isin": "ES0505548448",
-        "weight": 0.16,
+        "name": "Ontime Corporate Union S.L. 4.27%",
+        "isin": "ES0505604571",
+        "weight": 0.15,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Gestamp Automocion S A 3.03%",
+        "isin": "ES0505223539",
+        "weight": 0.15,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Nueva Expresion Textil SA 6.56%",
+        "isin": "ES0526962040",
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Sacyr SA 3.46%",
         "isin": "ES0582870O57",
-        "weight": 0.16,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Tubacex Sa 3.43%",
-        "isin": "ES05329457O7",
-        "weight": 0.16,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Tubacex Sa 3.44%",
-        "isin": "ES05329457K5",
-        "weight": 0.16,
+        "name": "Ecoener SA 4.95%",
+        "isin": "ES0505548448",
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Amper SA 5.75%",
         "isin": "ES05092600V2",
-        "weight": 0.16,
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Audax Renovables SA 5.85%",
-        "isin": "ES0336463015",
-        "weight": 0.11,
+        "name": "Tubacex Sa 3.43%",
+        "isin": "ES05329457O7",
+        "weight": 0.15,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Visalia Energia SL 4.05%",
-        "isin": "ES0505703373",
-        "weight": 0.11,
+        "name": "Tubacex Sa 3.44%",
+        "isin": "ES05329457K5",
+        "weight": 0.15,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Premier Espana SA 4.96%",
+        "isin": "ES0505531410",
+        "weight": 0.14,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Grupo Pikolin S.L 3.03%",
         "isin": "ES05050721O1",
-        "weight": 0.11,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Eroski Sociedad Cooperativa 3.18%",
-        "isin": "ES0531429175",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Nexus Energia, S.A 3.37%",
         "isin": "ES0505280984",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "The Nimo's Holding SL 3.88%",
         "isin": "ES0505555575",
-        "weight": 0.11,
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Audax Renovables SA 5.85%",
+        "isin": "ES0336463015",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "General De Alquiler De Maquinaria SA 3.3%",
         "isin": "ES0541571511",
-        "weight": 0.11,
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "General De Alquiler De Maquinaria SA 3.32%",
+        "isin": "ES0541571610",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Agotzaina SL 3.8%",
         "isin": "ES0505695355",
-        "weight": 0.11,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Ecoener SA 4.27%",
-        "isin": "ES0505548349",
-        "weight": 0.11,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Audax Renovables SA 3.88%",
-        "isin": "ES05364630G1",
-        "weight": 0.11,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Premier Espana SA 3.8%",
-        "isin": "ES0505531394",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Atlantica Infraestructura Sostenible S L U 3.6%",
         "isin": "ES0505869133",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Atlantica Infraestructura Sostenible S L U 3.92%",
-        "isin": "ES0505869224",
-        "weight": 0.11,
+        "name": "Audax Renovables SA 3.88%",
+        "isin": "ES05364630G1",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Izertis S A 3.75%",
-        "isin": "ES0505449282",
-        "weight": 0.11,
+        "name": "Premier Espana SA 3.8%",
+        "isin": "ES0505531394",
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Ecoener SA 4.62%",
+        "isin": "ES0505548471",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Grupo Tradebe Medio Ambiente, S.L. 3.99%",
         "isin": "ES05054010B2",
-        "weight": 0.11,
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Izertis S A 3.75%",
+        "isin": "ES0505449282",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ferroglobe PLC 5.03%",
         "isin": "ES0505864043",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "United States",
         "sector": null
       },
       {
-        "name": "Record Go Alquiler Vacacional SA 4.15%",
-        "isin": "ES0505667461",
-        "weight": 0.11,
+        "name": "Atlantica Infraestructura Sostenible S L U 3.92%",
+        "isin": "ES0505869224",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ontime Corporate Union S.L. 4.35%",
         "isin": "ES0505604548",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ecoener SA 4.65%",
         "isin": "ES0505548380",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Sacyr SA 3.21%",
-        "isin": "ES0582870R21",
-        "weight": 0.11,
+        "name": "Record Go Alquiler Vacacional SA 4.15%",
+        "isin": "ES0505667461",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Amper SA 5.7%",
-        "isin": "ES05092600U4",
-        "weight": 0.11,
+        "name": "The Nimo's Holding SL 4.75%",
+        "isin": "ES0505555732",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Izertis S A 3.65%",
         "isin": "ES0505449274",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
-        "name": "Grupo Tradebe Medio Ambiente, S.L. 4.34%",
-        "isin": "ES05054010O5",
-        "weight": 0.11,
+        "name": "Sacyr SA 3.21%",
+        "isin": "ES0582870R21",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Sacyr SA 3.68%",
         "isin": "ES0582870O08",
-        "weight": 0.11,
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Grupo Tradebe Medio Ambiente, S.L. 4.34%",
+        "isin": "ES05054010O5",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Grupo Tradebe Medio Ambiente, S.L. 4.3%",
         "isin": "ES05054010C0",
-        "weight": 0.11,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Tubacex Sa 3.22%",
-        "isin": "ES05329456Y8",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Tubacex Sa 3.22%",
         "isin": "ES05329456W2",
-        "weight": 0.11,
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Tubacex Sa 3.22%",
+        "isin": "ES05329456Y8",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Amper SA 5.97%",
         "isin": "ES05092600W0",
-        "weight": 0.11,
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Ence Energia y Celulosa S.A. 3.96%",
         "isin": "ES0530625229",
-        "weight": 0.11,
+        "weight": 0.1,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Tubacex Sa 3.39%",
+        "isin": "ES05329457R0",
+        "weight": 0.1,
         "country": "Spain",
         "sector": null
       },
@@ -13532,27 +13574,34 @@
       {
         "name": "Hamburg Commercial Bank AG 3.5%",
         "isin": "DE000HCB0CC8",
-        "weight": 0.06,
+        "weight": 0.05,
         "country": "Germany",
         "sector": null
       },
       {
         "name": "Eroski Sociedad Cooperativa 2.92%",
         "isin": "ES0531429217",
-        "weight": 0.06,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "General De Alquiler De Maquinaria SA 3.55%",
-        "isin": "ES0541571578",
-        "weight": 0.06,
+        "weight": 0.05,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Grupo Tradebe Medio Ambiente, S.L. 3.75%",
         "isin": "ES05054010J5",
+        "weight": 0.05,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Inmobiliaria del Sur S.A. 3.85%",
+        "isin": "ES0554653578",
+        "weight": 0.05,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "General De Alquiler De Maquinaria SA 3.55%",
+        "isin": "ES0541571578",
         "weight": 0.05,
         "country": "Spain",
         "sector": null
@@ -13572,22 +13621,8 @@
         "sector": null
       },
       {
-        "name": "Inmobiliaria del Sur S.A. 3.85%",
-        "isin": "ES0554653578",
-        "weight": 0.05,
-        "country": "Spain",
-        "sector": null
-      },
-      {
         "name": "Ence Energia y Celulosa S.A. 3.57%",
         "isin": "ES0530625278",
-        "weight": 0.05,
-        "country": "Spain",
-        "sector": null
-      },
-      {
-        "name": "Sacyr SA 3.27%",
-        "isin": "ES0582870R54",
         "weight": 0.05,
         "country": "Spain",
         "sector": null
@@ -13597,6 +13632,13 @@
         "isin": "ES0505864159",
         "weight": 0.05,
         "country": "United States",
+        "sector": null
+      },
+      {
+        "name": "Sacyr SA 3.27%",
+        "isin": "ES0582870R54",
+        "weight": 0.05,
+        "country": "Spain",
         "sector": null
       },
       {
@@ -14028,49 +14070,49 @@
       {
         "name": "Amundi Core Stoxx Eurp 600 ETF Acc",
         "isin": "LU0908500753",
-        "weight": 19.13,
+        "weight": 18.55,
         "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "iShares Core MSCI World ETF USD Acc",
         "isin": "IE00B4L5Y983",
-        "weight": 17.91,
+        "weight": 17.86,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "iShares Core S&P 500 ETF USD Acc",
         "isin": "IE00B5BMR087",
-        "weight": 17.49,
+        "weight": 17.63,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Invesco S&P 500 ETF",
         "isin": "IE00B3YCGJ38",
-        "weight": 10.82,
+        "weight": 10.9,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "iShares S&P 500 Equal Weight ETF USD Acc",
         "isin": "IE000MLMNYS0",
-        "weight": 8.41,
+        "weight": 8.43,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "iShares Physical Gold ETC",
         "isin": "IE00B4ND3602",
-        "weight": 5.48,
+        "weight": 4.97,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Xtrackers S&P 500 Swap ETF 1C",
         "isin": "LU0490618542",
-        "weight": 3.38,
+        "weight": 3.41,
         "country": "Luxembourg",
         "sector": null
       },
@@ -14084,21 +14126,21 @@
       {
         "name": "iShares STOXX Europe 600 (DE) Dist",
         "isin": "DE0002635307",
-        "weight": 2.3,
+        "weight": 2.22,
         "country": "Germany",
         "sector": null
       },
       {
         "name": "Cuenta:banco Inversis, S.A.",
         "isin": null,
-        "weight": 0.18,
+        "weight": 0.1,
         "country": null,
         "sector": null
       },
       {
         "name": "Cash & Cash Equivalents:",
         "isin": null,
-        "weight": -0.29,
+        "weight": -0.37,
         "country": null,
         "sector": null
       }
@@ -14156,120 +14198,120 @@
     "holdings": [
       {
         "name": "Spain (Kingdom of) 1.91%",
-        "isin": "ES0000012N43",
-        "weight": 17.82,
+        "isin": "ES0000012A89",
+        "weight": 20.07,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "iShares Core € Corp Bond ETF EUR Dist",
         "isin": "IE00B3F81R35",
-        "weight": 12.35,
+        "weight": 12.29,
+        "country": "Ireland",
+        "sector": null
+      },
+      {
+        "name": "Invesco S&P 500 ETF",
+        "isin": "IE00B3YCGJ38",
+        "weight": 9.62,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Amundi Core Stoxx Eurp 600 ETF Acc",
         "isin": "LU0908500753",
-        "weight": 10.15,
+        "weight": 9.55,
         "country": "Luxembourg",
-        "sector": null
-      },
-      {
-        "name": "Invesco S&P 500 ETF",
-        "isin": "IE00B3YCGJ38",
-        "weight": 9.84,
-        "country": "Ireland",
         "sector": null
       },
       {
         "name": "iShares Core MSCI World ETF USD Acc",
         "isin": "IE00B4L5Y983",
-        "weight": 9.48,
+        "weight": 9.18,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Amundi Ultra Short Term Bond Rsp I C",
         "isin": "FR0011088657",
-        "weight": 5.91,
+        "weight": 6.0,
         "country": "France",
         "sector": null
       },
       {
         "name": "AXA IM Euro Liquidity SRI",
         "isin": "FR0000978371",
-        "weight": 5.86,
+        "weight": 5.97,
         "country": "France",
+        "sector": null
+      },
+      {
+        "name": "Pictet-EUR Short Term Corp Bds J EUR",
+        "isin": "LU1634531427",
+        "weight": 5.12,
+        "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "iShares Physical Gold ETC",
         "isin": "IE00B4ND3602",
-        "weight": 5.48,
+        "weight": 5.05,
         "country": "Ireland",
-        "sector": null
-      },
-      {
-        "name": "Pictet-EUR Short Term Corp Bds I",
-        "isin": "LU0954602677",
-        "weight": 5.11,
-        "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "iShares Core S&P 500 ETF USD Acc",
         "isin": "IE00B5BMR087",
-        "weight": 4.91,
+        "weight": 4.8,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "UBS BBG MSCI Euro ArLiqCrpSustETFhCHFacc",
         "isin": "LU1484799843",
-        "weight": 3.82,
+        "weight": 3.79,
+        "country": "Luxembourg",
+        "sector": null
+      },
+      {
+        "name": "Amundi EUR Corporate Bd 0-3Y ESG ETF DRC",
+        "isin": "LU2037748774",
+        "weight": 3.41,
         "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "iShares S&P 500 Equal Weight ETF USD Acc",
         "isin": "IE000MLMNYS0",
-        "weight": 3.45,
+        "weight": 3.35,
         "country": "Ireland",
-        "sector": null
-      },
-      {
-        "name": "Amundi EUR Corporate Bd 0-3Y ESG ETF DRC",
-        "isin": "LU2037748774",
-        "weight": 3.38,
-        "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "Nordea 1 - Low Dur Eurp Cov Bd BI EUR",
         "isin": "LU1694214633",
-        "weight": 1.89,
-        "country": "Luxembourg",
-        "sector": null
-      },
-      {
-        "name": "Xtrackers S&P 500 Swap ETF 1C",
-        "isin": "LU0490618542",
-        "weight": 0.58,
+        "weight": 1.9,
         "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "Cuenta:banco Inversis, S.A.",
         "isin": null,
-        "weight": 0.19,
+        "weight": 1.07,
         "country": null,
+        "sector": null
+      },
+      {
+        "name": "Xtrackers S&P 500 Swap ETF 1C",
+        "isin": "LU0490618542",
+        "weight": 0.57,
+        "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "Cash & Cash Equivalents:",
         "isin": null,
-        "weight": -0.22,
+        "weight": -1.74,
         "country": null,
         "sector": null
       }
@@ -14434,8 +14476,8 @@
     "holdings": [
       {
         "name": "Spain (Kingdom of) 1.91%",
-        "isin": "ES0000012411",
-        "weight": 16.75,
+        "isin": "ES00000124C5",
+        "weight": 17.15,
         "country": "Spain",
         "sector": null
       },
@@ -14578,20 +14620,20 @@
       "styleBox": 4
     },
     "credit_quality": {
-      "AAA": 3.28,
-      "AA": 7.92,
-      "A": 41.2,
-      "BBB": 43.94,
-      "BB": 1.72,
+      "AAA": 3.06,
+      "AA": 7.63,
+      "A": 41.29,
+      "BBB": 44.49,
+      "BB": 1.49,
       "B": -0.02,
       "belowB": 0.0,
-      "notRated": 1.95
+      "notRated": 2.07
     }
   },
   "LU0920839346": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 46.0,
+    "aum_m": 45.6,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -18048,7 +18090,7 @@
   "LU0414045822": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 230.0,
+    "aum_m": 229.1,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -18571,7 +18613,7 @@
   "LU1548497699": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 495.4,
+    "aum_m": 507.5,
     "aum_currency": "EUR",
     "srri": 7,
     "asset_alloc": {
@@ -19179,7 +19221,7 @@
   "LU0158827518": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 326.0,
+    "aum_m": 325.3,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -19759,7 +19801,7 @@
   "LU0256840447": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 94.6,
+    "aum_m": 93.7,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -20145,7 +20187,7 @@
   "LU1363153823": {
     "updated": "2026-04-09",
     "rating": null,
-    "aum_m": 45.1,
+    "aum_m": 45.3,
     "aum_currency": "EUR",
     "srri": 4,
     "asset_alloc": {
@@ -27128,7 +27170,7 @@
   "LU1143164405": {
     "updated": "2026-04-09",
     "rating": null,
-    "aum_m": 33.9,
+    "aum_m": 33.7,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -27903,7 +27945,7 @@
   "LU1070113664": {
     "updated": "2026-04-09",
     "rating": 4,
-    "aum_m": 96.0,
+    "aum_m": 95.8,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -31845,7 +31887,7 @@
   "LU1400637036": {
     "updated": "2026-04-09",
     "rating": 5,
-    "aum_m": 183.5,
+    "aum_m": 183.1,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -34445,7 +34487,7 @@
   "LU1387904524": {
     "updated": "2026-04-09",
     "rating": 5,
-    "aum_m": 9.2,
+    "aum_m": 9.3,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -37040,7 +37082,7 @@
   "LU0933100983": {
     "updated": "2026-04-09",
     "rating": null,
-    "aum_m": 129.6,
+    "aum_m": 130.5,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -40722,7 +40764,7 @@
   "LU1282651980": {
     "updated": "2026-04-09",
     "rating": 4,
-    "aum_m": 53.9,
+    "aum_m": 53.8,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -86904,7 +86946,7 @@
   "LU2286300988": {
     "updated": "2026-04-09",
     "rating": 2,
-    "aum_m": 129.2,
+    "aum_m": 127.2,
     "aum_currency": "EUR",
     "srri": 7,
     "asset_alloc": {
@@ -87399,7 +87441,7 @@
   "LU2364421367": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 85.9,
+    "aum_m": 85.6,
     "aum_currency": "EUR",
     "srri": 4,
     "asset_alloc": {
@@ -90503,7 +90545,7 @@
   "LU2387748960": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 50.8,
+    "aum_m": 50.7,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -93984,78 +94026,120 @@
     "holdings": [
       {
         "name": "Spain (Kingdom of) 1.91%",
+        "isin": "ES0L02703053",
+        "weight": 5.94,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Spain (Kingdom of) 1.91%",
         "isin": "ES0000012N35",
-        "weight": 23.18,
+        "weight": 5.94,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Spain (Kingdom of) 1.91%",
+        "isin": "ES0000012M85",
+        "weight": 5.94,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Spain (Kingdom of) 1.91%",
+        "isin": "ES0000012L60",
+        "weight": 5.94,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Spain (Kingdom of) 1.91%",
+        "isin": "ES0000012K53",
+        "weight": 5.94,
+        "country": "Spain",
+        "sector": null
+      },
+      {
+        "name": "Spain (Kingdom of) 1.91%",
+        "isin": "ES00000124C5",
+        "weight": 5.94,
         "country": "Spain",
         "sector": null
       },
       {
         "name": "Amundi Smart Overnight Ret ETF Acc",
         "isin": "LU1190417599",
-        "weight": 18.48,
+        "weight": 18.8,
         "country": "Luxembourg",
         "sector": null
       },
       {
         "name": "Candriam Monétaire SICAV V C",
         "isin": "FR0013113222",
-        "weight": 16.46,
+        "weight": 10.7,
         "country": "France",
         "sector": null
       },
       {
         "name": "AXA IM Euro Liquidity SRI",
         "isin": "FR0000978371",
-        "weight": 14.49,
+        "weight": 9.42,
         "country": "France",
         "sector": null
       },
       {
         "name": "CM-AM Cash ISR IC",
         "isin": "FR0000979825",
-        "weight": 14.29,
+        "weight": 9.3,
         "country": "France",
+        "sector": null
+      },
+      {
+        "name": "UBS FS EUR Overnight Rate SF ETF A-acc",
+        "isin": "IE0006BDZN36",
+        "weight": 9.16,
+        "country": "Ireland",
         "sector": null
       },
       {
         "name": "Groupama Trésorerie IC",
         "isin": "FR0000989626",
-        "weight": 5.42,
+        "weight": 3.53,
         "country": "France",
         "sector": null
       },
       {
         "name": "Amundi Euro Liquidity Select IC C",
         "isin": "FR0010251660",
-        "weight": 5.05,
+        "weight": 3.29,
         "country": "France",
         "sector": null
       },
       {
         "name": "J.P. Morgan Mansart Euro ON A EUR Acc",
         "isin": "IE000HOG0GL0",
-        "weight": 2.27,
+        "weight": 1.48,
         "country": "Ireland",
         "sector": null
       },
       {
         "name": "Cuenta:banco Inversis, S.A.",
         "isin": null,
-        "weight": 0.24,
+        "weight": 0.72,
         "country": null,
         "sector": null
       },
       {
         "name": "Ostrum SRI Money IC",
         "isin": "FR0007075122",
-        "weight": 0.18,
+        "weight": 0.12,
         "country": "France",
         "sector": null
       },
       {
         "name": "Cash & Cash Equivalents:",
         "isin": null,
-        "weight": -0.07,
+        "weight": -2.14,
         "country": null,
         "sector": null
       }
@@ -97076,7 +97160,7 @@
   "LU0348784041": {
     "updated": "2026-04-09",
     "rating": 4,
-    "aum_m": 234.3,
+    "aum_m": 232.1,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -130885,7 +130969,7 @@
   "LU0920839429": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 13.4,
+    "aum_m": 13.2,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -133475,7 +133559,7 @@
   "LU0256840793": {
     "updated": "2026-04-09",
     "rating": 1,
-    "aum_m": 22.2,
+    "aum_m": 22.0,
     "aum_currency": "EUR",
     "srri": 6,
     "asset_alloc": {
@@ -134964,7 +135048,7 @@
   "LU1602091867": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 107.5,
+    "aum_m": 110.0,
     "aum_currency": "EUR",
     "srri": 7,
     "asset_alloc": {
@@ -151379,7 +151463,7 @@
   "LU1462192680": {
     "updated": "2026-04-09",
     "rating": 5,
-    "aum_m": 343.9,
+    "aum_m": 344.1,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -157174,7 +157258,7 @@
   "LU0739342060": {
     "updated": "2026-04-09",
     "rating": 3,
-    "aum_m": 124.9,
+    "aum_m": 125.2,
     "aum_currency": "EUR",
     "srri": 5,
     "asset_alloc": {
@@ -178115,7 +178199,7 @@
   "LU1462192417": {
     "updated": "2026-04-09",
     "rating": 5,
-    "aum_m": 202.5,
+    "aum_m": 202.6,
     "aum_currency": "EUR",
     "srri": 4,
     "asset_alloc": {
