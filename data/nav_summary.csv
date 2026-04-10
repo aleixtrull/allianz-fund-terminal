@@ -1,92 +1,82 @@
 isin,name,category,currency,source,type,first_date,last_date,years_of_data,data_points,total_return_%,cagr_%,annual_vol_%,sharpe_ratio,max_drawdown_%,calmar_ratio,var_95_daily_%,win_rate_%,last_nav,id,ticker
-BM_NASDAQ100,NASDAQ 100,RV EEUU,USD,,benchmark,1990-01-02,2026-04-08,36.3,9133,10835.63,13.82,26.41,0.471,-82.9,0.198,-2.626,54.7,24903.169922,BM_NASDAQ100,^NDX
-BM_SP500,S&P 500,RV EEUU,USD,,benchmark,1990-01-02,2026-04-08,36.3,9133,1785.74,8.44,18.03,0.318,-56.78,0.171,-1.717,53.7,6782.810059,BM_SP500,^GSPC
-BM_DOWJONES,Dow Jones Industrial,RV EEUU,USD,,benchmark,1992-01-02,2026-04-08,34.3,8627,1410.21,8.25,17.39,0.313,-53.78,0.176,-1.628,53.4,47909.921875,BM_DOWJONES,^DJI
-BM_DAX,DAX 40,RV Europa,EUR,,benchmark,1990-01-02,2026-04-08,36.3,9174,1246.12,7.43,21.79,0.253,-72.68,0.131,-2.136,53.2,24080.630859,BM_DAX,^GDAXI
-BM_HSI,Hang Seng Index,RV Asia,HKD,,benchmark,1990-01-02,2026-04-08,36.3,8948,812.34,6.29,24.74,0.214,-65.18,0.142,-2.318,51.6,25893.019531,BM_HSI,^HSI
-BM_SP500_ETF,S&P 500 (iShares UCITS ETF),RV EEUU,USD,,benchmark,2010-09-15,2026-04-08,15.6,3929,660.58,13.93,15.54,0.658,-33.9,0.42,-1.508,52.8,726.659973,BM_SP500_ETF,CSPX.L
-BM_IBEX35,IBEX 35,RV España,EUR,,benchmark,1993-07-12,2026-04-08,32.7,8295,541.53,5.84,21.89,0.185,-62.65,0.128,-2.151,53.1,18132.300781,BM_IBEX35,^IBEX
-LU0348784041,Allianz Global Investors Fund - Allianz Oriental Income AT EUR,Equity EM,EUR,mstarpy,fund,2009-12-07,2026-04-09,16.3,4099,433.49,10.79,17.09,0.454,-30.86,0.381,-1.677,54.5,533.49,,
-BM_MSCI_WORLD,MSCI World (iShares ETF),RV Global,GBp,,benchmark,2009-01-02,2026-04-08,17.3,4359,399.5,9.77,15.23,0.424,-25.56,0.409,-1.501,53.2,7063.0,BM_MSCI_WORLD,IWRD.L
-BM_CAC40,CAC 40,RV Europa,EUR,,benchmark,1990-03-01,2026-04-08,36.1,9168,351.08,4.26,21.16,0.113,-65.29,0.098,-2.072,51.7,8263.870117,BM_CAC40,^FCHI
-BM_WATER,Invesco Water Resources ETF,RV Tematico,USD,,benchmark,2005-12-06,2026-04-08,20.3,5115,346.9,7.64,23.3,0.262,-55.8,0.181,-2.137,51.9,69.269997,BM_WATER,PHO
-LU1462192680,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 75 CT2 EUR,Mixed,EUR,mstarpy,fund,2002-12-02,2026-04-09,23.4,5728,341.04,6.56,12.72,0.263,-43.26,0.17,-1.281,53.7,224.71,,
-BM_MSCI_ACWI,MSCI ACWI (iShares ETF),RV Global,USD,,benchmark,2011-10-21,2026-04-08,14.5,3652,336.95,10.73,15.62,0.474,-33.82,0.337,-1.517,54.0,110.620003,BM_MSCI_ACWI,ISAC.L
-BM_FTSE100,FTSE 100,RV Europa,GBP,,benchmark,1990-01-02,2026-04-08,36.3,9160,335.84,4.14,17.07,0.088,-52.57,0.105,-1.613,52.1,10608.900391,BM_FTSE100,^FTSE
-DE000A2DU1Y2,Kapital Plus Multi Asset 30 CT EUR,Mixed,EUR,mstarpy,fund,1994-05-31,2026-04-09,31.9,6667,322.82,4.63,7.08,0.24,-21.66,0.263,-0.635,53.3,103.22,,
-LU0414045822,Allianz Global Investors Fund - Allianz European Equity Dividend AT EUR,Equity EU,EUR,mstarpy,fund,2009-03-10,2026-04-09,17.1,4278,307.8,8.58,14.63,0.366,-38.81,0.241,-1.378,54.7,407.8,,
-LU1890834598,Allianz Global Investors Fund - Allianz Global Water AT EUR,Equity Thematic,EUR,mstarpy,fund,2008-07-31,2026-04-09,17.7,1925,273.79,7.74,22.35,0.706,-32.86,0.602,-1.783,53.1,174.82,,
-LU1400637036,Allianz Global Investors Fund - Allianz Best Styles Global Equity CT EUR,Equity Global,EUR,mstarpy,fund,2007-06-13,2026-04-09,18.8,4664,266.14,7.14,17.16,0.262,-54.34,0.156,-1.608,54.7,256.4,,
-LU0414046390,Allianz Global Investors Fund - Allianz European Equity Dividend CT EUR,Equity EU,EUR,mstarpy,fund,2009-03-10,2026-04-09,17.1,4278,258.94,7.77,14.63,0.315,-39.21,0.219,-1.385,54.5,358.94,,
-LU0933100983,Allianz Global Investors Fund - Allianz Best Styles US Equity AT (H2-EUR),Equity US,EUR,mstarpy,fund,2013-06-06,2026-04-09,12.8,3090,237.79,9.94,16.97,0.435,-34.15,0.333,-1.633,54.7,337.79,,
-LU1548497699,Allianz Global Investors Fund - Allianz Global Artificial Intelligence AT EUR,Equity Thematic,EUR,mstarpy,fund,2017-05-02,2026-04-09,8.9,2164,232.42,14.39,27.93,0.498,-48.47,0.37,-2.932,55.2,332.42,,
-BM_CYBERSEC,First Trust Cyber Security ETF,RV Tematico,USD,,benchmark,2015-07-07,2026-04-08,10.8,2705,227.97,11.68,23.17,0.422,-34.27,0.402,-2.442,54.4,65.660004,BM_CYBERSEC,CIBR
-LU1602091867,Allianz Global Investors Fund - Allianz Global Artificial Intelligence CT EUR,Equity Thematic,EUR,mstarpy,fund,2017-05-22,2026-04-09,8.9,2149,210.39,13.6,28.0,0.472,-48.9,0.352,-2.93,55.0,310.39,,
-LU1228143191,Allianz Global Investors Fund - Allianz Best Styles US Equity CT (H-EUR),Equity US,EUR,mstarpy,fund,2013-11-04,2026-04-09,12.4,2991,192.9,9.03,17.06,0.382,-34.01,0.309,-1.64,54.0,254.12,,
-LU1462192417,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 50 CT2 EUR,Mixed,EUR,mstarpy,fund,2002-12-02,2026-04-09,23.4,5727,190.04,4.67,8.67,0.123,-28.97,0.175,-0.877,53.1,166.6,,
-LU1143164405,Allianz Global Investors Fund - Allianz Japan Equity AT (H-EUR),Equity JP,EUR,mstarpy,fund,2015-08-24,2026-04-09,10.6,2477,184.89,10.35,18.91,0.447,-40.72,0.306,-1.737,53.3,284.89,,
-LU0256840447,Allianz Global Investors Fund - Allianz Euroland Equity Growth AT EUR,Equity EU,EUR,mstarpy,fund,1999-07-05,2026-04-09,26.8,6722,178.89,3.91,21.25,0.099,-74.76,0.082,-2.166,52.7,249.69,,
-BM_MSCI_EM,MSCI Emerging Markets ETF,RV Emergentes,GBp,,benchmark,2009-01-02,2026-04-08,17.3,4359,176.42,6.07,19.68,0.194,-37.43,0.209,-1.952,52.3,4460.0,BM_MSCI_EM,IEEM.L
-LU1387904524,Allianz Global Investors Fund - Allianz Best Styles Global AC Eq CT(EUR),Equity Global,EUR,mstarpy,fund,2015-09-21,2026-04-09,10.5,2543,173.2,10.0,15.16,0.47,-33.76,0.329,-1.419,53.9,117.8,,
-LU0158828326,Allianz Global Investors Fund - Allianz Global Sustainability CT EUR,Equity Global,EUR,mstarpy,fund,2007-07-31,2026-04-09,18.7,4682,167.15,5.4,17.13,0.161,-53.03,0.128,-1.669,52.8,26.7147,,
-LU0348753244,Allianz Global Investors Fund - Allianz Japan Equity CT (H-EUR),Equity JP,EUR,mstarpy,fund,2015-02-05,2026-04-09,11.2,2606,163.93,9.07,18.89,0.38,-42.17,0.265,-1.748,53.4,263.93,,
-ES0108192008,Allianz Bolsa Española FI,Equity ES,EUR,mstarpy,fund,2020-02-28,2026-04-08,6.1,1520,153.91,16.48,16.58,0.774,-21.61,0.779,-1.52,53.5,25.39098,,
-BM_METALS,SPDR S&P Metals & Mining ETF,RV Tematico,USD,,benchmark,2006-06-22,2026-04-08,19.8,4979,151.5,4.77,38.27,0.21,-87.34,0.138,-3.626,51.3,113.349998,BM_METALS,XME
-BM_STOXX600,Stoxx Europe 600,RV Europa,EUR,,benchmark,2004-04-26,2026-04-08,21.9,5519,148.31,4.23,17.82,0.098,-60.54,0.095,-1.719,53.4,613.5,BM_STOXX600,^STOXX
-LU0348740696,Allianz India Equity AT EUR,Equity EM,EUR,mstarpy,fund,2009-12-30,2026-04-09,16.3,3861,145.2,5.67,19.33,0.193,-46.76,0.165,-1.94,53.0,85.85,,
-LU0256840793,Allianz Global Investors Fund - Allianz Euroland Equity Growth CT EUR,Equity EU,EUR,mstarpy,fund,1999-07-05,2026-04-09,26.8,6718,140.84,3.34,21.28,0.074,-74.76,0.074,-2.168,52.6,219.53,,
-LU1019963369,Allianz Global Investors Fund - Allianz Best Styles Europe Equity AT EUR,Equity EU,EUR,mstarpy,fund,2014-10-13,2026-04-09,11.5,2853,139.94,7.92,15.66,0.317,-36.42,0.246,-1.524,55.7,239.94,,
-LU1070113664,Allianz Global Investors Fund - Allianz Income and Growth AT (H2-EUR),Mixed,EUR,mstarpy,fund,2011-11-07,2026-04-09,14.4,3506,131.3,5.99,9.83,0.256,-26.68,0.244,-1.026,56.2,174.82,,
-LU1254136416,Allianz Global Investors Fund - Allianz Capital Plus AT EUR,Fixed Income,EUR,mstarpy,fund,2005-10-27,2026-04-09,20.4,5089,121.35,3.96,6.26,0.021,-21.13,0.195,-0.612,53.8,116.1,,
-LU2089281393,Allianz Global Investors Fund - Allianz Best Styles Europe Equity CT EUR,Equity EU,EUR,mstarpy,fund,2014-03-11,2026-04-09,12.1,2999,119.71,6.73,15.48,0.247,-36.44,0.215,-1.509,55.2,160.65,,
-LU1282651980,Allianz Global Investors Fund - Allianz Emerging Markets EquityAT EUR,Equity EM,EUR,mstarpy,fund,2015-10-16,2026-04-09,10.5,2535,110.92,7.38,15.87,0.295,-35.34,0.246,-1.521,53.9,210.92,,
-BM_EU_SMALLCAP,SPDR MSCI Europe Small Cap ETF,RV Europa,EUR,,benchmark,2015-02-18,2026-04-08,11.1,2827,108.48,6.82,18.34,0.232,-43.93,0.188,-1.749,52.9,63.32,BM_EU_SMALLCAP,ZPRX.DE
-LU0920839346,Allianz Global Investors Fund - Allianz Europe Equity Growth Select AT EUR,Equity EU,EUR,mstarpy,fund,2013-05-02,2026-04-09,12.9,3208,107.7,5.81,18.63,0.187,-39.53,0.189,-1.811,54.3,207.7,,
-LU2089280825,Allianz Global Investors Fund - Allianz Emerging Markets EquityCT EUR,Equity EM,EUR,mstarpy,fund,2011-06-21,2026-04-09,14.8,3607,102.93,4.9,16.28,0.14,-36.08,0.174,-1.546,53.3,160.09,,
-LU0739342060,Allianz Global Investors Fund - Allianz Income and Growth CT (H2-EUR),Mixed,EUR,mstarpy,fund,2012-02-22,2026-04-09,14.1,3428,95.46,4.86,9.79,0.144,-26.73,0.202,-1.025,55.9,195.46,,
-LU0920839429,Allianz Global Investors Fund - Allianz Europe Equity Growth Select CT EUR,Equity EU,EUR,mstarpy,fund,2013-05-02,2026-04-09,12.9,3210,88.53,5.02,18.63,0.146,-39.93,0.168,-1.815,54.2,188.53,,
-IE00B1Z6D669,PIMCO GIS Diversified Income Fund E Class EUR (Hedged) Accumulation,Fixed Income,EUR,mstarpy,fund,2007-07-03,2026-04-08,18.8,4579,86.22,3.37,5.15,-0.086,-25.54,0.139,-0.441,47.8,15.81,,
-ES0108232002,Allianz Cartera Dinamica FI,Mixed,EUR,mstarpy,fund,2020-02-28,2026-04-07,6.1,1519,77.85,9.89,11.69,0.534,-17.47,0.587,-1.161,53.6,17.78485,,
-LU1462192250,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 15 CT2 EUR,Mixed,EUR,mstarpy,fund,2009-01-26,2026-04-09,17.2,4186,74.58,3.29,4.43,-0.123,-14.99,0.23,-0.423,52.9,116.13,,
-BM_MSCI_INDIA,MSCI India ETF (iShares),RV Emergentes,USD,,benchmark,2018-05-29,2026-04-08,7.9,1987,70.88,7.05,21.81,0.238,-42.98,0.214,-1.889,52.9,8.784,BM_MSCI_INDIA,NDIA.L
-LU1861128574,Allianz Global Investors Fund - Allianz Global Small Cap Equity AT EUR,Equity Global,EUR,mstarpy,fund,2018-10-10,2026-04-09,7.5,1810,66.37,7.03,19.44,0.257,-39.05,0.23,-1.852,54.1,166.37,,
-LU0158827518,Allianz Global Investors Fund - Allianz Global Sustainability AT EUR,Equity Global,EUR,mstarpy,fund,2020-07-30,2026-04-09,5.7,1426,49.63,7.34,14.78,0.286,-20.34,0.404,-1.404,54.0,149.63,,
-IE00B3QDMK77,PIMCO GIS Euro Income Bond Fund E Class EUR Accumulation,Fixed Income,EUR,mstarpy,fund,2011-02-28,2026-04-08,15.1,3748,47.4,2.6,3.15,-0.425,-17.85,0.149,-0.309,43.4,14.74,,
-BM_NIKKEI,Nikkei 225,RV Asia,JPY,,benchmark,1990-01-04,2026-04-08,36.3,8899,45.45,1.04,23.55,-0.007,-81.78,0.047,-2.313,51.1,56308.421875,BM_NIKKEI,^N225
-BM_STOXX50,Euro Stoxx 50,RV Europa,EUR,,benchmark,2007-03-30,2026-04-08,19.0,4767,41.43,1.84,21.89,0.011,-60.29,0.07,-2.107,51.8,5913.370117,BM_STOXX50,^STOXX50E
-LU0348826909,Allianz Global Investors Fund - Allianz All China Equity AT (EUR),Equity EM,EUR,mstarpy,fund,2017-12-05,2026-04-09,8.3,1912,36.69,3.82,23.84,0.125,-60.0,0.116,-2.162,50.7,80.44,,
-ES0108240005,Allianz Cartera Decidida FI,Mixed,EUR,mstarpy,fund,2020-02-28,2026-04-07,6.1,1519,33.39,4.83,5.69,0.166,-8.76,0.564,-0.565,53.2,13.3391,,
+BM_NASDAQ100,NASDAQ 100,RV EEUU,USD,,benchmark,1990-01-02,2026-04-09,36.3,9134,10914.2,13.84,26.41,0.472,-82.9,0.199,-2.625,54.7,25082.089844,BM_NASDAQ100,^NDX
+BM_SP500,S&P 500,RV EEUU,USD,,benchmark,1990-01-02,2026-04-09,36.3,9134,1797.37,8.45,18.03,0.319,-56.78,0.172,-1.717,53.7,6824.660156,BM_SP500,^GSPC
+BM_DOWJONES,Dow Jones Industrial,RV EEUU,USD,,benchmark,1992-01-02,2026-04-09,34.3,8628,1418.91,8.26,17.39,0.314,-53.78,0.176,-1.628,53.4,48185.800781,BM_DOWJONES,^DJI
+BM_DAX,DAX 40,RV Europa,EUR,,benchmark,1990-01-02,2026-04-09,36.3,9175,1230.82,7.4,21.79,0.252,-72.68,0.131,-2.135,53.2,23806.990234,BM_DAX,^GDAXI
+BM_HSI,Hang Seng Index,RV Asia,HKD,,benchmark,1990-01-02,2026-04-09,36.3,8949,807.38,6.27,24.74,0.213,-65.18,0.142,-2.318,51.6,25752.400391,BM_HSI,^HSI
+BM_SP500_ETF,S&P 500 (iShares UCITS ETF),RV EEUU,USD,,benchmark,2010-09-15,2026-04-09,15.6,3930,664.61,13.96,15.54,0.66,-33.9,0.421,-1.508,52.8,730.51001,BM_SP500_ETF,CSPX.L
+BM_IBEX35,IBEX 35,RV España,EUR,,benchmark,1993-07-12,2026-04-09,32.7,8296,540.56,5.84,21.89,0.185,-62.65,0.128,-2.15,53.1,18104.900391,BM_IBEX35,^IBEX
+BM_MSCI_WORLD,MSCI World (iShares ETF),RV Global,GBp,,benchmark,2009-01-02,2026-04-09,17.3,4360,401.2,9.79,15.23,0.426,-25.56,0.41,-1.5,53.2,7087.0,BM_MSCI_WORLD,IWRD.L
+BM_CAC40,CAC 40,RV Europa,EUR,,benchmark,1990-03-01,2026-04-09,36.1,9169,350.1,4.25,21.16,0.112,-65.29,0.098,-2.072,51.6,8245.799805,BM_CAC40,^FCHI
+BM_WATER,Invesco Water Resources ETF,RV Tematico,USD,,benchmark,2005-12-06,2026-04-09,20.3,5116,349.68,7.67,23.3,0.263,-55.8,0.181,-2.137,51.9,69.699997,BM_WATER,PHO
+BM_MSCI_ACWI,MSCI ACWI (iShares ETF),RV Global,USD,,benchmark,2011-10-21,2026-04-09,14.5,3653,338.42,10.76,15.62,0.475,-33.82,0.338,-1.517,54.0,110.989998,BM_MSCI_ACWI,ISAC.L
+BM_FTSE100,FTSE 100,RV Europa,GBP,,benchmark,1990-01-02,2026-04-09,36.3,9161,335.62,4.14,17.07,0.088,-52.57,0.105,-1.613,52.1,10603.5,BM_FTSE100,^FTSE
+BM_CYBERSEC,First Trust Cyber Security ETF,RV Tematico,USD,,benchmark,2015-07-07,2026-04-09,10.8,2706,215.08,11.26,23.19,0.405,-34.27,0.391,-2.446,54.4,63.080002,BM_CYBERSEC,CIBR
+BM_MSCI_EM,MSCI Emerging Markets ETF,RV Emergentes,GBp,,benchmark,2009-01-02,2026-04-09,17.3,4360,175.78,6.05,19.68,0.193,-37.43,0.209,-1.952,52.3,4449.75,BM_MSCI_EM,IEEM.L
+ES0108192008,Allianz Bolsa Española FI,Equity ES,EUR,yfinance (ticker=0P0001JD2Q.F),fund,2020-02-28,2026-04-08,6.1,1546,153.91,16.48,16.2,0.773,-21.64,0.763,-1.515,53.1,25.39098,,
+BM_METALS,SPDR S&P Metals & Mining ETF,RV Tematico,USD,,benchmark,2006-06-22,2026-04-09,19.8,4980,150.08,4.74,38.27,0.209,-87.34,0.137,-3.626,51.3,112.709999,BM_METALS,XME
+BM_STOXX600,Stoxx Europe 600,RV Europa,EUR,,benchmark,2004-04-26,2026-04-09,22.0,5520,147.94,4.22,17.81,0.098,-60.54,0.095,-1.719,53.3,612.590027,BM_STOXX600,^STOXX
+LU1143164405,Allianz Japan Equity AT H EUR,Equity JP,EUR,yfinance (ticker=0P00016L5V.F),fund,2022-03-08,2026-04-09,4.1,929,128.04,22.34,19.96,1.022,-23.38,1.044,-1.636,55.5,284.890015,,
+LU0348753244,Allianz Global Investors Fund - Allianz Japan Equity,Equity JP,EUR,yfinance (ticker=0P00015C6M.F),fund,2022-03-08,2026-04-09,4.1,932,121.27,21.45,19.91,0.979,-23.18,1.014,-1.635,55.1,263.929993,,
+BM_EU_SMALLCAP,SPDR MSCI Europe Small Cap ETF,RV Europa,EUR,,benchmark,2015-02-18,2026-04-09,11.1,2828,107.92,6.79,18.34,0.23,-43.93,0.187,-1.749,52.8,63.150002,BM_EU_SMALLCAP,ZPRX.DE
+ES0108232002,Allianz Cartera Dinamica FI,Mixed,EUR,yfinance (ticker=0P0001JD2S.F),fund,2020-02-28,2026-04-07,6.1,1542,77.85,9.89,11.56,0.526,-17.47,0.577,-1.161,54.0,17.784849,,
+BM_MSCI_INDIA,MSCI India ETF (iShares),RV Emergentes,USD,,benchmark,2018-05-29,2026-04-09,7.9,1988,71.47,7.1,21.81,0.24,-42.98,0.215,-1.888,52.9,8.814,BM_MSCI_INDIA,NDIA.L
+LU1019963369,Allianz Global Investors Fund - Allianz Best Styles Europe Equity,Equity EU,EUR,yfinance (ticker=0P00014GBG.F),fund,2022-03-08,2026-04-09,4.1,992,63.06,12.71,13.39,0.697,-15.89,0.839,-1.285,55.9,239.940002,,
+LU1400637036,Allianz Best Styles Global Eq CT EUR,Equity Global,EUR,yfinance (ticker=0P00018MQU.F),fund,2022-03-08,2026-04-09,4.1,979,60.47,12.27,15.84,0.596,-21.73,0.619,-1.448,54.2,256.399994,,
+LU2089281393,Allianz Global Investors Fund - Allianz Best Styles Europe Equity,Equity EU,EUR,yfinance (ticker=0P0001IXB9.F),fund,2022-03-08,2026-04-09,4.1,988,59.83,12.16,13.42,0.662,-16.09,0.801,-1.287,55.5,160.649994,,
+LU0933100983,Allianz Global Investors Fund - Allianz Best Styles US Equity AT (H2-EUR),Equity US,EUR,yfinance (ticker=0P0000YYLC.F),fund,2022-03-08,2026-04-09,4.1,954,48.4,10.14,18.7,0.438,-24.74,0.493,-1.858,52.6,337.790009,,
+LU1282651980,Allianz Emerging Markets Equity AT EUR,Equity EM,EUR,yfinance (ticker=0P00016V8I.F),fund,2022-03-08,2026-04-09,4.1,946,46.83,9.85,16.47,0.462,-19.95,0.582,-1.491,53.8,210.919998,,
+LU1228143191,Allianz Global Investors Fund - Allianz Best Styles US Equity,Equity US,EUR,yfinance (ticker=0P00016UO8.F),fund,2022-03-08,2026-04-09,4.1,960,45.9,9.68,18.62,0.412,-24.78,0.471,-1.847,52.0,254.119995,,
+BM_NIKKEI,Nikkei 225,RV Asia,JPY,,benchmark,1990-01-04,2026-04-09,36.3,8900,44.38,1.02,23.55,-0.008,-81.78,0.047,-2.313,51.1,55895.320312,BM_NIKKEI,^N225
+LU1462192680,Allianz Dyn MltAst Stgy SRI75 CT2 EUR,Mixed,EUR,yfinance (ticker=0P00018TZE.F),fund,2022-03-08,2026-04-09,4.1,955,43.44,9.23,12.36,0.51,-17.06,0.604,-1.175,54.8,224.710007,,
+LU2089280825,Allianz Global Investors Fund - Allianz Emerging Markets Equity,Equity EM,EUR,yfinance (ticker=0P0001IXB8.F),fund,2022-03-08,2026-04-09,4.1,946,42.66,9.08,16.42,0.416,-20.23,0.535,-1.501,53.7,160.089996,,
+BM_STOXX50,Euro Stoxx 50,RV Europa,EUR,,benchmark,2007-03-30,2026-04-09,19.0,4768,41.02,1.82,21.89,0.01,-60.29,0.07,-2.107,51.8,5896.290039,BM_STOXX50,^STOXX50E
+LU1602091867,Allianz Global Artfcl Intlgc CT EUR,Equity Thematic,EUR,yfinance (ticker=0P0001AKHI.F),fund,2022-03-08,2026-04-09,4.1,959,38.34,8.26,28.74,0.302,-39.36,0.322,-2.966,53.8,310.390015,,
+ES0108240005,Allianz Cartera Decidida FI,Mixed,EUR,yfinance (ticker=0P0001JD2P.F),fund,2020-02-28,2026-04-07,6.1,1542,33.39,4.83,5.62,0.155,-8.76,0.556,-0.554,53.7,13.3391,,
+LU1861128574,Allianz Global Investors Fund - Allianz Global Small Cap Equity,Equity Global,EUR,yfinance (ticker=0P0001H2R3.F),fund,2022-03-08,2026-04-09,4.1,954,33.21,7.27,18.18,0.288,-25.76,0.359,-1.65,53.9,166.369995,,
+LU1462192417,Allianz Dyn MltAst Stgy SRI 50 CT2 EUR,Mixed,EUR,yfinance (ticker=0P00018TZD.F),fund,2022-03-08,2026-04-09,4.1,957,25.94,5.81,9.0,0.276,-13.64,0.476,-0.901,53.6,166.600006,,
+LU3034475122,0P0001V3NQ.F,Mixed,EUR,yfinance (ticker=0P0001V3NQ.F),fund,2025-04-30,2026-04-09,0.9,223,24.91,26.63,11.99,1.833,-9.98,2.603,-1.191,59.5,119.620003,,
+LU1387904524,Allianz Best Styles Global AC Eq CT(EUR),Equity Global,EUR,yfinance (ticker=0P0001UXEY.F),fund,2025-03-31,2026-04-09,1.0,243,22.54,21.96,17.97,1.046,-12.98,1.756,-1.686,57.4,117.800003,,
 LU2208987680,Allianz ActiveInvest Dynamic,Mixed,EUR,allianzgi/excel,fund,2021-04-12,2026-04-09,5.0,1241,22.37,4.13,12.14,0.069,-22.11,0.219,-1.251,55.2,142.99,,
-LU1363153823,Allianz Global Investors Fund - Allianz US Short Duration High Income Bond AT (H2-EUR),Fixed Income,EUR,mstarpy,fund,2016-03-08,2026-04-09,10.1,2446,20.51,1.87,4.15,-0.48,-17.17,0.117,-0.361,54.4,120.51,,
-LU3034475122,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 75 CM5 EUR,Mixed,EUR,mstarpy,fund,2025-04-30,2026-04-09,0.9,224,19.62,20.95,12.09,1.405,-10.42,2.014,-1.188,57.8,119.62,,
-BM_EUR_CORP,iShares EUR Corp Bond ETF,Renta Fija,EUR,,benchmark,2009-03-06,2026-04-08,17.1,4316,19.43,1.04,4.26,-0.674,-18.19,0.062,-0.341,52.8,119.43,BM_EUR_CORP,IEAC.L
-LU1205638155,Allianz Global Investors Fund - Allianz Advanced Fixed Income Euro AT EUR,Fixed Income,EUR,mstarpy,fund,2012-03-06,2026-04-09,14.1,3499,19.09,1.25,2.64,-1.025,-16.19,0.08,-0.255,51.6,99.37,,
-LU2514905111,Allianz Global Investors Fund - Allianz Better World Dynamic CT2 EUR,Mixed,EUR,mstarpy,fund,2022-08-30,2026-04-09,3.6,873,17.6,4.6,11.63,0.117,-17.01,0.315,-1.099,51.5,117.6,,
-LU2286300988,Allianz Global Investors Fund - Allianz Cyber Security AT EUR Acc,Equity Thematic,EUR,mstarpy,fund,2021-02-09,2026-04-09,5.2,1248,16.16,2.95,28.41,0.108,-48.21,0.147,-2.935,53.0,116.16,,
-ES0108373004,Allianz Cartera Moderada FI,Mixed,EUR,mstarpy,fund,2020-02-28,2026-04-07,6.1,1519,15.71,2.42,3.05,-0.502,-5.15,0.48,-0.304,53.3,11.57096,,
-LU2514905038,Allianz Global Investors Fund - Allianz Better World Moderate CT2 EUR,Mixed,EUR,mstarpy,fund,2022-08-30,2026-04-09,3.6,873,15.19,4.0,8.68,0.053,-12.89,0.346,-0.826,52.8,115.19,,
-BM_MSCI_CHINA,MSCI China ETF (iShares),RV Emergentes,USD,,benchmark,2015-04-08,2026-04-08,11.0,2780,14.29,1.22,26.32,0.026,-52.26,0.09,-2.367,49.4,5.8975,BM_MSCI_CHINA,CNYA.L
-LU3034475049,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 50 CM5 EUR,Mixed,EUR,mstarpy,fund,2025-04-30,2026-04-09,0.9,224,14.29,15.24,9.12,1.262,-8.68,1.788,-0.868,58.7,114.29,,
-LU2514904908,Allianz Global Investors Fund - Allianz Better World Defensive CT2 EUR,Mixed,EUR,mstarpy,fund,2022-08-30,2026-04-09,3.6,873,13.45,3.56,5.95,-0.03,-8.37,0.457,-0.58,54.2,113.45,,
-LU1459823750,Allianz Global Investors Fund - Allianz US Short Duration High Income Bond CT (H2-EUR),Fixed Income,EUR,mstarpy,fund,2016-08-18,2026-04-09,9.6,2337,13.34,1.31,4.22,-0.607,-17.16,0.084,-0.369,53.3,113.34,,
-LU1459823677,Allianz Global Investors Fund - Allianz Advanced Fixed Income Euro CT EUR,Fixed Income,EUR,mstarpy,fund,2012-03-06,2026-04-09,14.1,3499,12.73,0.85,2.64,-1.176,-17.21,0.052,-0.254,51.0,94.95,,
-IE00B5B5L056,PIMCO GIS Dynamic Bond Fund E Class EUR (Hedged) Accumulation,Fixed Income,EUR,mstarpy,fund,2009-11-20,2026-04-08,16.4,3999,12.5,0.72,2.57,-1.253,-13.98,0.055,-0.257,34.9,11.97,,
-LU2829845630,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 30 CT2 EUR,Mixed,EUR,mstarpy,fund,2024-07-01,2026-04-09,1.8,423,12.06,6.64,6.85,0.443,-9.09,0.774,-0.632,57.3,112.06,,
+LU2399975627,Allianz Global Investors Fund - Allianz Better World Dynamic,Mixed,EUR,yfinance (ticker=0P0001NSOI.F),fund,2022-03-08,2026-04-09,4.1,927,21.2,4.82,12.82,0.16,-16.96,0.357,-1.227,51.6,101.0,,
+LU0158827518,Allianz Global Sustainability AT EUR,Equity Global,EUR,yfinance (ticker=0P0001KEQL.F),fund,2022-03-08,2026-04-09,4.1,985,20.84,4.74,15.43,0.132,-20.34,0.297,-1.42,53.3,149.630005,,
+LU2514905111,Allianz Better World Dynamic CT2 EUR,Mixed,EUR,yfinance (ticker=0P0001PMAQ.F),fund,2022-09-02,2026-04-09,3.6,853,20.26,5.26,11.68,0.183,-17.01,0.361,-1.089,51.8,117.599998,,
+BM_EUR_CORP,iShares EUR Corp Bond ETF,Renta Fija,EUR,,benchmark,2009-03-06,2026-04-09,17.1,4317,19.07,1.03,4.26,-0.678,-18.19,0.061,-0.341,52.8,119.07,BM_EUR_CORP,IEAC.L
+LU1890834598,Allianz Global Water AT EUR,Equity Thematic,EUR,yfinance (ticker=0P0001F31T.F),fund,2022-03-08,2026-04-09,4.1,942,17.88,4.11,17.39,0.11,-22.39,0.264,-1.664,50.3,174.820007,,
+LU2286300988,Allianz Cyber Security AT EUR Acc,Equity Thematic,EUR,yfinance (ticker=0P0001LPJI.F),fund,2022-03-08,2026-04-09,4.1,921,17.62,4.05,29.97,0.165,-37.15,0.241,-3.073,53.4,116.160004,,
+LU3034475049,Allianz Dyn MltAst Stgy SRI 50 CM5 EUR,Mixed,EUR,yfinance (ticker=0P0001V3NP.F),fund,2025-04-30,2026-04-09,0.9,223,17.6,18.79,9.04,1.639,-8.38,2.247,-0.868,59.5,114.290001,,
+LU2514905038,Allianz Better World Moderate CT2 EUR,Mixed,EUR,yfinance (ticker=0P0001PMAR.F),fund,2022-09-02,2026-04-09,3.6,851,17.36,4.55,8.72,0.129,-12.89,0.398,-0.826,53.2,115.190002,,
+ES0108373004,Allianz Cartera Moderada FI,Mixed,EUR,yfinance (ticker=0P0001JD2R.F),fund,2020-02-28,2026-04-07,6.1,1542,15.71,2.42,3.02,-0.52,-5.15,0.473,-0.303,53.7,11.57096,,
+LU2514904908,Allianz Better World Defensive CT2 EUR,Mixed,EUR,yfinance (ticker=0P0001PMAP.F),fund,2022-09-02,2026-04-09,3.6,855,15.15,4.0,5.93,0.057,-8.37,0.519,-0.562,54.3,113.449997,,
+LU2364421367,Allianz Global Investors Fund - Allianz Better World Moderate,Mixed,EUR,yfinance (ticker=0P0001NSOJ.F),fund,2022-03-08,2026-04-09,4.1,927,14.82,3.44,9.61,0.023,-14.73,0.287,-0.936,52.4,99.389999,,
+DE000A2DU1Y2,Kapital Plus,Mixed,EUR,yfinance (ticker=0P0001IXUP.F),fund,2019-01-02,2026-04-09,7.3,1824,14.57,1.89,6.96,-0.27,-21.5,0.099,-0.709,54.4,103.220001,,
+BM_MSCI_CHINA,MSCI China ETF (iShares),RV Emergentes,USD,,benchmark,2015-04-08,2026-04-09,11.0,2781,13.42,1.15,26.32,0.023,-52.26,0.088,-2.367,49.4,5.8525,BM_MSCI_CHINA,CNYA.L
+LU2829845630,0P0001T95B.F,Mixed,EUR,yfinance (ticker=0P0001T95B.F),fund,2024-07-01,2026-04-09,1.8,421,12.06,6.64,6.87,0.447,-9.09,0.778,-0.635,57.4,112.059998,,
 LU2208987508,Allianz ActiveInvest Balanced,Mixed,EUR,allianzgi/excel,fund,2021-04-12,2026-04-09,5.0,1241,11.21,2.15,8.74,-0.167,-20.23,0.126,-0.905,55.6,123.99,,
-IE00BDT57Y96,PIMCO GIS Low Duration Income Fund E Class EUR (Hedged) Accumulation,Fixed Income,EUR,mstarpy,fund,2018-05-31,2026-04-08,7.9,1919,10.9,1.33,3.18,-0.814,-11.33,0.124,-0.296,36.8,11.09,,
-LU2637966677,Allianz Global Investors Fund - Allianz Target Maturity Euro Bond II CT (EUR),Fixed Income,EUR,mstarpy,fund,2023-09-04,2026-04-09,2.6,637,10.88,4.06,1.48,0.07,-1.02,4.014,-0.117,57.4,110.88,,
-LU3034474828,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 30 AT2 (H2-CHF),Mixed,EUR,mstarpy,fund,2025-04-30,2026-04-09,0.9,224,8.5,9.05,6.56,0.828,-6.81,1.386,-0.632,60.1,108.5,,
-ES0108193006,Allianz Cartera Bonos 26 FI,Mixed,EUR,mstarpy,fund,2023-03-17,2026-04-08,3.1,764,8.09,2.58,1.6,-0.885,-1.42,1.814,-0.162,59.0,10.80934,,
-BM_EURO_AGG,iShares Euro Aggregate Bond ETF,Renta Fija,EUR,,benchmark,2009-03-06,2026-04-08,17.1,4316,7.55,0.43,4.32,-0.806,-22.07,0.023,-0.413,52.8,107.550003,BM_EURO_AGG,IEAG.L
-LU3034474745,Allianz Global Investors Fund - Allianz Dynamic Multi Asset Strategy SRI 15 CM5 EUR,Mixed,EUR,mstarpy,fund,2025-04-30,2026-04-09,0.9,224,7.08,7.53,5.79,0.673,-6.24,1.266,-0.59,59.2,107.08,,
-LU2720182869,Allianz Global Investors Fund - Allianz Target Maturity €o Bd III CT € Acc,Fixed Income,EUR,mstarpy,fund,2024-02-12,2026-04-09,2.2,528,6.73,3.07,1.49,-0.588,-1.6,1.957,-0.133,56.0,106.73,,
+IE00BDT57Y96,PIMCO GIS Low Dur Inc E EUR Hdg Acc,Fixed Income,EUR,yfinance (ticker=0P0001D6OX.F),fund,2018-05-31,2026-04-08,7.9,1939,10.9,1.33,3.12,-0.834,-11.33,0.123,-0.298,36.8,11.09,,
+LU2637966677,Allianz Trgt Mat € o Bd II CT €,Fixed Income,EUR,yfinance (ticker=0P0001RHFG.F),fund,2023-09-13,2026-04-09,2.6,611,10.87,4.1,1.55,0.177,-1.02,4.181,-0.117,57.5,110.879997,,
+LU3034474828,0P0001V3NO.F,Mixed,EUR,yfinance (ticker=0P0001V3NO.F),fund,2025-04-30,2026-04-09,0.9,223,10.86,11.57,6.48,1.222,-6.58,1.811,-0.616,61.3,108.5,,
+LU3034474745,0P0001V3NM.F,Mixed,EUR,yfinance (ticker=0P0001V3NM.F),fund,2025-04-30,2026-04-09,0.9,223,8.94,9.52,5.72,1.029,-6.04,1.636,-0.581,59.9,107.080002,,
+LU1462192250,Allianz Dyn MltAst Stgy SRI15 CT2 EUR,Mixed,EUR,yfinance (ticker=0P00018TZC.F),fund,2022-03-08,2026-04-09,4.1,956,8.26,1.96,5.33,-0.331,-11.4,0.196,-0.511,51.4,116.129997,,
+ES0108193006,Allianz Cartera Bonos 26 FI,Mixed,EUR,yfinance (ticker=0P0001QOC7.F),fund,2023-03-17,2026-04-08,3.1,766,8.09,2.58,1.6,-0.891,-1.42,1.809,-0.162,59.3,10.80934,,
+LU1363153823,Allianz US Short Dur Hi Inc Bd AT H2 EUR,Fixed Income,EUR,yfinance (ticker=0P00017LY4.F),fund,2022-03-08,2026-04-09,4.1,962,7.95,1.89,4.56,-0.414,-8.11,0.26,-0.428,52.0,120.510002,,
+LU1459823750,Allianz US Short Dur Hi Inc Bd CT H2 EUR,Fixed Income,EUR,yfinance (ticker=0P00018HPH.F),fund,2022-03-08,2026-04-09,4.1,961,7.29,1.74,4.51,-0.455,-8.11,0.24,-0.426,52.0,113.339996,,
+BM_EURO_AGG,iShares Euro Aggregate Bond ETF,Renta Fija,EUR,,benchmark,2009-03-06,2026-04-09,17.1,4317,7.13,0.4,4.32,-0.811,-22.07,0.022,-0.413,52.8,107.129997,BM_EURO_AGG,IEAG.L
+IE00B3QDMK77,PIMCO GIS Euro Income Bond E EUR Acc,Fixed Income,EUR,yfinance (ticker=0P0000SOHQ.F),fund,2018-01-02,2026-04-08,8.3,2065,6.89,0.81,3.41,-0.918,-17.85,0.049,-0.331,41.6,14.74,,
+LU2720182869,Allianz Target Mat € Bd III CT € Acc,Fixed Income,EUR,yfinance (ticker=0P0001S4KT.F),fund,2024-02-14,2026-04-09,2.1,522,6.73,3.08,1.5,-0.56,-1.6,1.98,-0.135,55.9,106.730003,,
 LU2208987763,Allianz ActiveInvest Defensive,Mixed,EUR,allianzgi/excel,fund,2021-04-12,2026-04-09,5.0,1241,6.17,1.21,6.06,-0.429,-16.99,0.082,-0.591,54.2,113.27,,
-LU2387748960,Allianz Global Investors Fund - Allianz Global Equity Unconstrained AT EUR,Equity Global,EUR,mstarpy,fund,2022-02-22,2026-04-09,4.1,989,2.7,0.65,18.79,-0.083,-23.51,0.104,-1.728,51.5,102.7,,
-LU2958546181,Allianz Global Investors Fund - Allianz Dynamic Allocation Plus Equity CT2 EUR,Equity Global,EUR,mstarpy,fund,2025-01-17,2026-04-09,1.2,293,2.54,2.07,22.12,0.028,-25.84,0.179,-2.539,51.7,102.54,,
-ES0108283005,Allianz Rendimiento FI,Fixed Income,EUR,mstarpy,fund,2024-07-15,2026-04-08,1.7,435,1.78,1.03,1.0,-2.97,-1.16,0.885,-0.015,85.5,101.73692,,
-ES0108203003,Allianz Conservador Dinamico FI,Mixed,EUR,mstarpy,fund,2020-02-28,2026-04-07,6.1,1519,1.14,0.19,0.36,-10.637,-5.34,0.035,-0.034,56.5,10.11382,,
-LU2399975627,Allianz Global Investors Fund - Allianz Better World Dynamic AT EUR,Mixed,EUR,mstarpy,fund,2021-11-15,2026-04-09,4.4,1066,1.0,0.23,12.71,-0.232,-26.98,0.039,-1.244,50.9,101.0,,
-LU3270886024,Allianz Europe Equity Crescendo CT2 EUR,Equity EU,EUR,mstarpy,fund,2026-03-09,2026-04-09,0.1,21,-0.05,,0.78,-5.946,-0.2,3.137,-0.071,45.0,99.95,,
-LU2364421367,Allianz Global Investors Fund - Allianz Better World Moderate AT EUR,Mixed,EUR,mstarpy,fund,2021-11-15,2026-04-09,4.4,1066,-0.61,-0.14,9.51,-0.388,-23.47,0.013,-0.937,51.5,99.39,,
-BM_EUR_HY,iShares EUR High Yield Bond ETF,Renta Fija,EUR,,benchmark,2010-09-03,2026-04-08,15.6,3939,-8.62,-0.58,7.26,-0.594,-30.75,0.01,-0.523,54.3,90.790001,BM_EUR_HY,IHYG.L
-BM_US_TREASURY,iShares $ Treasury Bond 20yr ETF,Renta Fija,USD,,benchmark,2015-01-21,2026-04-08,11.2,2833,-35.05,-3.78,14.63,-0.463,-52.3,0.053,-1.463,48.8,3.254,BM_US_TREASURY,IDTL.L
+LU2387748960,Allianz Global Investors Fund - Allianz Global Equity Unconstrained,Equity Global,EUR,yfinance (ticker=0P0001OJ9U.F),fund,2022-03-08,2026-04-09,4.1,916,4.37,1.05,19.32,-0.049,-23.51,0.13,-1.758,52.0,102.699997,,
+LU1254136416,Allianz Capital Plus AT EUR,Fixed Income,EUR,yfinance (ticker=0P00016XEE.F),fund,2022-03-08,2026-04-09,4.1,983,4.05,0.98,7.49,-0.361,-13.9,0.093,-0.721,51.9,116.099998,,
+LU0920839346,Allianz Global Investors Fund - Allianz Europe Equity Growth Select,Equity EU,EUR,yfinance (ticker=0P0000YRQ1.F),fund,2022-03-08,2026-04-09,4.1,989,2.61,0.63,21.62,-0.047,-27.31,0.11,-1.991,51.6,207.699997,,
+LU2958546181,Allianz Dynamic Allc Pl Eq CT2 EUR,Equity Global,EUR,yfinance (ticker=0P0001UHJX.F),fund,2025-01-21,2026-04-09,1.2,291,2.54,2.09,22.25,0.03,-25.84,0.18,-2.541,51.7,102.540001,,
+ES0108283005,0P0001TDG0.F,Fixed Income,EUR,yfinance (ticker=0P0001TDG0.F),fund,2024-07-22,2026-04-08,1.7,427,1.89,1.1,1.01,-2.866,-1.06,1.046,-0.012,86.2,101.736923,,
+ES0108203003,Allianz Conservador Dinamico FI,Mixed,EUR,yfinance (ticker=0P0001JD2U.F),fund,2020-02-28,2026-04-07,6.1,1542,1.14,0.19,0.35,-10.789,-5.34,0.035,-0.034,56.5,10.11382,,
+LU1205638155,Allianz Global Investors Fund - Allianz Advanced Fixed Income Euro,Fixed Income,EUR,yfinance (ticker=0P000195I3.F),fund,2022-03-08,2026-04-09,4.1,987,0.32,0.08,3.74,-1.028,-11.67,0.013,-0.369,50.2,99.370003,,
+LU3270886024,Allianz Europe Equity Crescendo,Equity EU,EUR,yfinance (ticker=0P00021CKJ.F),fund,2026-03-09,2026-04-09,0.1,21,-0.05,,0.78,-5.946,-0.2,3.137,-0.071,45.0,99.949997,,
+LU0920839429,Allianz Global Investors Fund - Allianz Europe Equity Growth Select,Equity EU,EUR,yfinance (ticker=0P0000YRQ2.F),fund,2022-03-08,2026-04-09,4.1,991,-0.49,-0.12,21.6,-0.083,-27.59,0.08,-1.992,51.6,188.529999,,
+LU1459823677,Allianz Advanced Fixed Inc Euro CT EUR,Fixed Income,EUR,yfinance (ticker=0P00018TZA.F),fund,2022-03-08,2026-04-09,4.1,989,-1.3,-0.32,3.74,-1.141,-11.89,0.022,-0.367,50.0,94.949997,,
+LU0348826909,Allianz All China Equity AT EUR,Equity EM,EUR,yfinance (ticker=0P0001NZBR.F),fund,2022-03-08,2026-04-09,4.1,872,-4.85,-1.21,24.71,-0.096,-45.18,0.036,-2.162,49.0,80.440002,,
+LU0256840793,Allianz Euroland Equity Growth CT EUR,Equity EU,EUR,yfinance (ticker=0P00009QB3.F),fund,2022-03-08,2026-04-09,4.1,989,-6.58,-1.65,20.95,-0.169,-28.81,0.016,-2.137,51.1,219.529999,,
+BM_EUR_HY,iShares EUR High Yield Bond ETF,Renta Fija,EUR,,benchmark,2010-09-03,2026-04-09,15.6,3940,-8.7,-0.58,7.26,-0.595,-30.75,0.01,-0.523,54.3,90.709999,BM_EUR_HY,IHYG.L
+LU0348740696,0P0001SSFN.F,Equity EM,EUR,yfinance (ticker=0P0001SSFN.F),fund,2024-04-30,2026-04-09,1.9,452,-14.15,-7.56,19.02,-0.563,-37.08,0.181,-1.849,46.1,85.849998,,
+BM_US_TREASURY,iShares $ Treasury Bond 20yr ETF,Renta Fija,USD,,benchmark,2015-01-21,2026-04-09,11.2,2834,-35.36,-3.82,14.63,-0.465,-52.3,0.054,-1.463,48.7,3.2385,BM_US_TREASURY,IDTL.L
