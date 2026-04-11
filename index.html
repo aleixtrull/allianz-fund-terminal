@@ -1177,7 +1177,7 @@ function _refreshCurrentPage(){
   const pg=S.currentPage;
   if(!pg||pg==='today')         { _safe(renderTodayPage,'today'); }
   else if(pg==='performance')   { _safe(renderPerfFullTable,'perfTable'); }
-  else if(pg==='overview')      { console.log('=== OVERVIEW PAGE RENDERING ==='); _safe(renderKPIs,'kpis'); _safe(renderChartSelector,'chartSelector'); _safe(renderMainChart,'mainChart'); _safe(renderReturnsTable,'returnsTable'); _safe(renderRollingReturns,'rollingReturns'); _safe(renderCompare,'compare'); _safe(renderCompMorningstar,'compMstar'); }
+  else if(pg==='overview')      { _safe(renderKPIs,'kpis'); _safe(renderChartSelector,'chartSelector'); _safe(renderMainChart,'mainChart'); _safe(renderReturnsTable,'returnsTable'); _safe(renderRollingReturns,'rollingReturns'); _safe(renderCompare,'compare'); _safe(renderCompMorningstar,'compMstar'); }
   else if(pg==='benchmark')     { if(document.getElementById('bm-select')?.value) _safe(renderBenchmark,'benchmark'); _safe(()=>populateBenchmarkSelectors(),'bmSel'); }
 }
 
@@ -4964,8 +4964,8 @@ function renderBenchmarkKPIs(fund, bmId, bmDates, bmPrices, bm, ab, mF, mBm) {
 
 function renderBenchmarkChart(fundIds, bmId, bmDates, bmPrices) {
   if (S.charts.bmChart) S.charts.bmChart.destroy();
-  // Benchmark series indexed to 100
-  const bmIdx = bmPrices.map((p,i) => bmPrices[0]>0 ? +(p/bmPrices[0]*100).toFixed(4) : null);
+  // Benchmark series indexed to 100 (use first valid price as base)
+  const bmIdx = getIndexed(bmPrices);
   const datasets = [
     { label: BM_DATA[bmId]?.name||bmId, data: bmIdx, borderColor: '#ffffff', borderWidth: 2.5,
       borderDash: [5,3], pointRadius: 0, tension: .1, backgroundColor: 'rgba(255,255,255,.05)' },
@@ -5722,12 +5722,14 @@ async function renderTodayPage(){
   // Benchmarks grid
   const BM_SHOW=['BM_MSCI_WORLD','BM_SP500','BM_STOXX600','BM_IBEX35','BM_EURO_AGG'];
   const BM_LBL={BM_MSCI_WORLD:'MSCI World',BM_SP500:'S&P 500',BM_STOXX600:'EuroStoxx 600',BM_IBEX35:'IBEX 35',BM_EURO_AGG:'Euro Agg Bond'};
+  let bmLatestDate='';
   const bmCards=BM_SHOW.map(id=>{
     const bm=BM_DATA[id];if(!bm||bm.prices.length<2)return '';
     const n=bm.prices.length;
     let i=n-1;while(i>0&&(isNaN(bm.prices[i])||bm.prices[i]==null))i--;
     let j=i-1;while(j>=0&&(isNaN(bm.prices[j])||bm.prices[j]==null))j--;
     if(j<0||bm.prices[j]===0)return '';
+    if(bm.dates[i]>bmLatestDate)bmLatestDate=bm.dates[i];
     const ret=(bm.prices[i]/bm.prices[j]-1)*100;
     const col=ret>=0?'var(--green)':'var(--red)';
     const dir=ret>=0?'▲':'▼';
@@ -5736,6 +5738,7 @@ async function renderTodayPage(){
       <div class="today-bm-val" style="color:${col}">${dir}&nbsp;${ret>=0?'+':''}${ret.toFixed(2)}%</div>
     </div>`;
   }).filter(Boolean).join('');
+  const bmLatestDateFmt=bmLatestDate?bmLatestDate.split('-').reverse().join('/'):'—';
 
   // Top movers (1D)
   const allRets=isins.map(isin=>({isin,ret:_today1DRet(isin)})).filter(x=>x.ret!==null);
@@ -5768,7 +5771,10 @@ async function renderTodayPage(){
       ${freshLbl?`<span class="today-fresh-pill" style="color:${freshCol};border-color:${freshCol};">Últimos datos: ${latestDateFormatted} · ${freshLbl}</span>`:''}
     </div>
 
-    ${bmCards?`<div class="today-bm-grid">${bmCards}</div>`:''}
+    ${bmCards?`<div class="today-panel" style="margin-bottom:0;">
+      <div class="today-section-hdr"><div class="today-section-dot" style="background:var(--text3);"></div><div class="today-section-title">Mercados · ${bmLatestDateFmt}</div></div>
+      <div class="today-bm-grid">${bmCards}</div>
+    </div>`:''}
 
     <div class="today-4col-grid">
       <div class="today-panel">
@@ -6780,15 +6786,10 @@ function renderCompMorningstar() {
   if (!panel || !body) return;
 
   const isins = [...S.selected];
-  console.log('[comp-ms] selected:', isins);
-  console.log('[comp-ms] COMP_DATA keys:', Object.keys(COMP_DATA).length);
   const withData = isins.filter(i => {
     const c = COMP_DATA[i];
-    const ok = c && Object.keys(c).length > 1;
-    console.log(`[comp-ms] ${i}: hasData=${!!c}, keys=${c ? Object.keys(c).length : 0}, ok=${ok}`);
-    return ok;
+    return c && Object.keys(c).length > 1;
   });
-  console.log('[comp-ms] withData:', withData);
 
   if (withData.length === 0) {
     panel.style.display = 'none';
