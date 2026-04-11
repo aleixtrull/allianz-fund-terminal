@@ -283,7 +283,8 @@ def merge_with_existing(new_df: pd.DataFrame, csv_path: Path) -> pd.DataFrame:
         existing.columns = [c.lower() for c in existing.columns]
         combined = pd.concat([existing, new_df[~new_df.index.isin(existing.index)]])
         return combined.sort_index()
-    except Exception:
+    except Exception as e:
+        print(f"  [WARN] merge_with_existing failed for {csv_path.name}: {e} — using new data only")
         return new_df
 
 

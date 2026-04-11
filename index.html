@@ -1131,7 +1131,7 @@ function _buildStaleCache(){
   for(const isin of Object.keys(S.funds)){
     const f = S.funds[isin];
     if(!f.dates?.length) continue;
-    const last = new Date(f.dates[f.dates.length-1]);
+    const last = new Date(f.dates[f.dates.length-1]+'T12:00:00');
     let diff = (today - last) / msPerDay;
     diff -= Math.floor(diff / 7) * 2; // subtract weekends
     if(diff > 5) _staleCache.add(isin);
@@ -1541,8 +1541,8 @@ function getMonthlyRets(isin){
   return r;
 }
 
-function getIndexed(prices){if(!prices.length)return[];const base=prices.find(p=>!isNaN(p)&&p>0);if(!base)return prices;return prices.map(p=>isNaN(p)||p==null?null:+(p/base*100).toFixed(4));}
-function getDrawdown(prices){let peak=prices[0];return prices.map(p=>{if(p==null||isNaN(p))return null;if(p>peak)peak=p;return+((p-peak)/peak*100).toFixed(4)});}
+function getIndexed(prices){if(!prices.length)return[];const base=prices.find(p=>!isNaN(p)&&p>0);if(!base)return prices.map(()=>null);return prices.map(p=>isNaN(p)||p==null?null:+(p/base*100).toFixed(4));}
+function getDrawdown(prices){if(!prices.length)return[];let peak=prices[0];return prices.map(p=>{if(p==null||isNaN(p))return null;if(p>peak)peak=p;return+((p-peak)/peak*100).toFixed(4)});}
 function getDailyRets(prices){const r=[null];for(let i=1;i<prices.length;i++){const a=prices[i-1],b=prices[i];r.push(a>0&&b!=null?+((b-a)/a*100).toFixed(4):null);}return r;}
 // ═══════════════════════════════════════════════════════════
 // GLOBAL PERIOD
@@ -4895,10 +4895,17 @@ function renderBenchmark() {
 function getPricesFromRaw(src, period) {
   const { dates, prices } = src;
   if (!period || period === 'all') return { dates, prices };
-  const days = {d:1,w:7,'1m':30,'3m':91,'6m':182,'1y':365,'3y':1095,'5y':1825}[period] || 0;
-  const cutoff = new Date(); cutoff.setDate(cutoff.getDate()-days);
-  const cs = cutoff.toISOString().split('T')[0];
-  let start = dates.findIndex(d=>d>=cs); if(start<0) start=0;
+  let cs;
+  if (period === 'ytd') {
+    cs = `${new Date().getFullYear()}-01-01`;
+  } else {
+    const days = {d:1,w:7,'1w':7,'1m':30,'3m':91,'6m':182,'1y':365,'3y':1095,'5y':1825}[period] || 0;
+    if (!days) return { dates, prices };
+    const cutoff = new Date(); cutoff.setDate(cutoff.getDate()-days);
+    cs = cutoff.toISOString().split('T')[0];
+  }
+  const start = dates.findIndex(d=>d>=cs);
+  if (start < 0) return { dates: [], prices: [] };
   return { dates: dates.slice(start), prices: prices.slice(start) };
 }
 
