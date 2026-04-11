@@ -6694,7 +6694,7 @@ function _renderFundModalComp(isin) {
 
   // ── Top holdings ──────────────────────────────────────────────────────────
   if (comp.holdings && comp.holdings.length > 0) {
-    const top20 = comp.holdings.slice(0, 20);
+    const top20 = [...comp.holdings].sort((a,b)=>(b.weight||0)-(a.weight||0)).slice(0, 20);
     html += `<div class="fmd-sub-title" style="margin-top:10px;">Top posiciones</div>
     <table class="fmd-holdings-tbl">
       <thead><tr><th>#</th><th>Nombre</th><th>ISIN</th><th>País</th><th>%</th></tr></thead>

@@ -236,7 +236,7 @@ def fetch_composition(isin: str) -> dict:
                     "sector":  str(sector_v)  if pd.notna(sector_v)  else None,
                 })
             if h_list:
-                data["holdings"] = h_list
+                data["holdings"] = sorted(h_list, key=lambda x: x["weight"] or 0, reverse=True)
         except Exception:
             pass
 
