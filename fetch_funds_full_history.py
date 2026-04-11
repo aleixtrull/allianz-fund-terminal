@@ -899,8 +899,10 @@ def main():
                 existing = pd.read_csv(wide_path, index_col=0, parse_dates=True)
                 new_df   = pd.DataFrame(all_navs)
                 new_df.index = pd.to_datetime(new_df.index)
-                combined = pd.concat([existing, new_df])
-                wide = combined[~combined.index.duplicated(keep="last")].sort_index()
+                # combine_first: new_df wins where non-NaN, existing fills the rest.
+                # This preserves history of any fund that returned sparse/no new data,
+                # instead of overwriting existing daily history with NaN rows.
+                wide = new_df.combine_first(existing).sort_index()
             except Exception:
                 wide = pd.DataFrame(all_navs).sort_index()
                 wide.index.name = "date"
