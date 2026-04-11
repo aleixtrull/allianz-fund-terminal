@@ -1431,7 +1431,7 @@ function getPrices(isin,period){
       const cutoff=new Date();cutoff.setDate(cutoff.getDate()-days);
       cs=cutoff.toISOString().split('T')[0];
     }
-    start=f.dates.findIndex(d=>d>=cs);if(start<0)start=0;
+    start=f.dates.findIndex(d=>d>=cs);if(start<0)return{dates:[],prices:[]};
   }
   return{dates:f.dates.slice(start),prices:f.prices.slice(start)};
 }
@@ -5685,10 +5685,12 @@ function _todayGreeting(){const h=new Date().getHours();return h<12?'Buenos día
 
 function _today1DRet(isin){
   const f=S.funds[isin];if(!f||f.prices.length<2)return null;
-  const p=f.prices,n=p.length;
+  const p=f.prices,d=f.dates,n=p.length;
   let i=n-1;while(i>0&&(isNaN(p[i])||p[i]==null))i--;
   let j=i-1;while(j>=0&&(isNaN(p[j])||p[j]==null))j--;
   if(j<0||p[j]===0)return null;
+  // Ignore if gap between last two prices exceeds 10 days (annual/sparse data)
+  if(d[i]&&d[j]&&(new Date(d[i])-new Date(d[j]))/86400000>10)return null;
   return(p[i]/p[j]-1)*100;
 }
 

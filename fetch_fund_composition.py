@@ -341,7 +341,11 @@ def main() -> None:
             isin = futures[future]
             try:
                 data = future.result()
-                results[isin] = data
+                # Only overwrite if we got real data (more than just the "updated" timestamp)
+                if len(data) > 1:
+                    results[isin] = data
+                elif isin not in results:
+                    results[isin] = data
                 rating  = data.get("rating", "—")
                 aum     = data.get("aum_m")
                 aum_str = f"{aum:.0f}M" if aum else "—"
