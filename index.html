@@ -276,6 +276,9 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:h
 .logo{font-size:14px;font-weight:700;letter-spacing:.14em;color:var(--accent);display:flex;align-items:center;gap:10px;}
 .logo-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:blink 2s infinite;flex-shrink:0;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.clock{font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.05em;}
+.period-bar{display:flex;align-items:center;gap:4px;}
+.pbar-label{font-size:8px;font-family:var(--mono);color:var(--text3);letter-spacing:.1em;margin-right:2px;}
 .nav{display:flex;gap:2px;}
 .nav-btn{padding:3px 11px;font-size:9.5px;font-family:var(--mono);background:transparent;border:1px solid transparent;color:var(--text2);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;transition:all .15s;border-radius:2px;white-space:nowrap;}
 .nav-btn:hover,.nav-btn:focus-visible{color:var(--text);border-color:var(--border2);}
@@ -1058,7 +1061,7 @@ input[type=file]{display:none;}
       <div class="grid-2" id="bm-detail-grid" style="display:none;">
         <div class="panel">
           <div class="panel-hdr"><div class="panel-title"><span class="ptd"></span>Métricas vs benchmark</div></div>
-          <div class="panel-body" style="overflow-x:auto;"><table class="data-table" id="bm-metrics-table"></table></div>
+          <div class="panel-body"><div style="overflow:auto;max-height:400px;"><table class="data-table" id="bm-metrics-table"></table></div></div>
         </div>
         <div class="panel">
           <div class="panel-hdr"><div class="panel-title"><span class="ptd"></span>Retornos rolling vs benchmark</div></div>
@@ -1075,7 +1078,7 @@ input[type=file]{display:none;}
             <button onclick="exportBenchmarkPDF()" style="font-size:9px;padding:3px 9px;background:transparent;border:1px solid var(--border2);color:var(--text2);font-family:var(--mono);cursor:pointer;border-radius:2px;" onmouseover="this.style.borderColor='var(--red)';this.style.color='var(--red)'" onmouseout="this.style.borderColor='var(--border2)';this.style.color='var(--text2)'">↓ PDF</button>
           </div>
         </div>
-        <div class="panel-body" style="overflow-x:auto;"><table class="data-table" id="bm-all-table"></table></div>
+        <div class="panel-body"><div style="overflow:auto;max-height:calc(100vh - 260px);"><table class="data-table" id="bm-all-table"></table></div></div>
       </div>
     </div>
 
@@ -2333,7 +2336,7 @@ function renderReturnsTable(){
     }).join('');
     return`<tr><td><div class="name-cell"><span class="fund-dot" style="background:${f.color};flex-shrink:0;"></span><span title="${f.name}">${f.name}</span></div></td>${cells}</tr>`;
   }).join('');
-  document.getElementById('returns-table-wrap').innerHTML=`<div style="overflow-x:auto;"><table class="data-table">${thead}<tbody>${tbody}</tbody></table></div>`;
+  document.getElementById('returns-table-wrap').innerHTML=`<div style="overflow:auto;max-height:calc(100vh - 280px);"><table class="data-table">${thead}<tbody>${tbody}</tbody></table></div>`;
 }
 // ═══════════════════════════════════════════════════════════
 // ROLLING RETURNS
