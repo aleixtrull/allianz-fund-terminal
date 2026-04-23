@@ -276,6 +276,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--mono);overflow-x:h
 .logo{font-size:14px;font-weight:700;letter-spacing:.14em;color:var(--accent);display:flex;align-items:center;gap:10px;}
 .logo-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:blink 2s infinite;flex-shrink:0;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.topbar-right{display:flex;align-items:center;gap:8px;}
+#product-filter-btns{display:flex;align-items:center;border:1px solid var(--border2);border-radius:3px;overflow:hidden;}
+#product-filter-btns .prod-btn{border-right:1px solid var(--border2);border-radius:0;}
+#product-filter-btns .prod-btn:last-child{border-right:none;}
 .clock{font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.05em;}
 .period-bar{display:flex;align-items:center;gap:4px;}
 .pbar-label{font-size:8px;font-family:var(--mono);color:var(--text3);letter-spacing:.1em;margin-right:2px;}
