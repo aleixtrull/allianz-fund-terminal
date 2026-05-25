@@ -57,7 +57,7 @@ LU3034474828,0P0001V3NO.F,Mixed,EUR,yfinance (ticker=0P0001V3NO.F),fund,2025-04-
 LU2958546181,Allianz Dynamic Allc Pl Eq CT2 EUR,Equity Global,EUR,yfinance (ticker=0P0001UHJX.F),fund,2025-01-21,2026-05-22,1.3,320,11.67,8.65,21.49,0.327,-25.84,0.427,-2.395,53.3,111.669998,,
 LU2637966677,Allianz Trgt Mat € o Bd II CT €,Fixed Income,EUR,yfinance (ticker=0P0001RHFG.F),fund,2023-09-13,2026-05-22,2.7,638,11.2,4.03,1.52,0.139,-1.02,4.119,-0.117,57.1,111.209999,,
 LU1890834598,Allianz Global Water AT EUR,Equity Thematic,EUR,yfinance (ticker=0P0001F31T.F),fund,2022-03-08,2026-05-22,4.2,971,11.02,2.52,17.29,0.012,-22.39,0.188,-1.658,50.1,164.639999,,
-IE00BDT57Y96,PIMCO GIS Low Dur Inc E EUR Hdg Acc,Fixed Income,EUR,yfinance (ticker=0P0001D6OX.F),fund,2018-05-31,2026-05-21,8.0,1969,10.7,1.28,3.12,-0.849,-11.33,0.119,-0.297,36.7,11.07,,
+IE00BDT57Y96,PIMCO GIS Low Dur Inc E EUR Hdg Acc,Fixed Income,EUR,yfinance (ticker=0P0001D6OX.F),fund,2018-05-31,2026-05-22,8.0,1970,10.8,1.29,3.12,-0.846,-11.33,0.12,-0.297,36.8,11.08,,
 LU3034474745,0P0001V3NM.F,Mixed,EUR,yfinance (ticker=0P0001V3NM.F),fund,2025-04-30,2026-05-22,1.1,252,10.21,9.61,5.72,1.035,-6.04,1.642,-0.517,59.0,108.099998,,
 LU1462192250,Allianz Dyn MltAst Stgy SRI15 CT2 EUR,Mixed,EUR,yfinance (ticker=0P00018TZC.F),fund,2022-03-08,2026-05-22,4.2,985,9.75,2.24,5.34,-0.276,-11.4,0.221,-0.508,51.4,117.730003,,
 LU2208987763,Allianz ActiveInvest Defensive,Mixed,EUR,allianzgi/excel,fund,2021-05-26,2026-05-22,5.0,1240,9.37,1.81,6.1,-0.327,-16.99,0.118,-0.589,54.2,116.47,,
@@ -66,8 +66,8 @@ LU1363153823,Allianz US Short Dur Hi Inc Bd AT H2 EUR,Fixed Income,EUR,yfinance 
 BM_EURO_AGG,iShares Euro Aggregate Bond ETF,Renta Fija,EUR,,benchmark,2009-03-06,2026-05-22,17.2,4347,7.39,0.42,4.32,-0.808,-22.07,0.023,-0.413,52.7,107.389999,BM_EURO_AGG,IEAG.L
 LU1459823750,Allianz US Short Dur Hi Inc Bd CT H2 EUR,Fixed Income,EUR,yfinance (ticker=0P00018HPH.F),fund,2022-03-08,2026-05-22,4.2,990,7.19,1.67,4.47,-0.477,-8.11,0.23,-0.42,52.0,113.239998,,
 LU2720182869,Allianz Target Mat € Bd III CT € Acc,Fixed Income,EUR,yfinance (ticker=0P0001S4KT.F),fund,2024-02-14,2026-05-22,2.3,549,7.1,3.07,1.48,-0.564,-1.6,1.982,-0.128,55.8,107.099998,,
+IE00B3QDMK77,PIMCO GIS Euro Income Bond E EUR Acc,Fixed Income,EUR,yfinance (ticker=0P0000SOHQ.F),fund,2018-01-02,2026-05-22,8.4,2095,6.6,0.77,3.44,-0.921,-17.85,0.046,-0.337,41.5,14.7,,
 LU0920839346,Allianz Global Investors Fund - Allianz Europe Equity Growth Select,Equity EU,EUR,yfinance (ticker=0P0000YRQ1.F),fund,2022-03-08,2026-05-22,4.2,1018,6.41,1.49,21.53,-0.007,-27.31,0.141,-1.986,51.5,215.389999,,
-IE00B3QDMK77,PIMCO GIS Euro Income Bond E EUR Acc,Fixed Income,EUR,yfinance (ticker=0P0000SOHQ.F),fund,2018-01-02,2026-05-21,8.4,2094,6.24,0.72,3.44,-0.933,-17.85,0.044,-0.337,41.5,14.65,,
 LU1254136416,Allianz Capital Plus AT EUR,Fixed Income,EUR,yfinance (ticker=0P00016XEE.F),fund,2022-03-08,2026-05-22,4.2,1012,5.05,1.18,7.46,-0.334,-13.9,0.108,-0.718,51.7,117.209999,,
 LU0920839429,Allianz Global Investors Fund - Allianz Europe Equity Growth Select,Equity EU,EUR,yfinance (ticker=0P0000YRQ2.F),fund,2022-03-08,2026-05-22,4.2,1020,3.1,0.73,21.52,-0.043,-27.59,0.111,-1.987,51.5,195.339996,,
 LU0348826909,Allianz All China Equity AT EUR,Equity EM,EUR,yfinance (ticker=0P0001NZBR.F),fund,2022-03-08,2026-05-22,4.2,899,2.13,0.5,24.54,-0.016,-45.18,0.08,-2.141,49.3,86.339996,,
