@@ -38,6 +38,7 @@ ES0108240005,Allianz Cartera Decidida FI,Mixed,EUR,yfinance (ticker=0P0001JD2P.F
 LU1387904524,Allianz Best Styles Global AC Eq CT(EUR),Equity Global,EUR,yfinance (ticker=0P0001UXEY.F),fund,2025-03-31,2026-06-03,1.2,279,35.85,29.8,17.13,1.475,-12.98,2.254,-1.474,58.3,130.589996,,
 LU3034475122,0P0001V3NQ.F,Mixed,EUR,yfinance (ticker=0P0001V3NQ.F),fund,2025-04-30,2026-06-03,1.1,259,32.56,29.44,11.69,2.073,-9.98,2.829,-1.047,59.3,126.339996,,
 LU1462192417,Allianz Dyn MltAst Stgy SRI 50 CT2 EUR,Mixed,EUR,yfinance (ticker=0P00018TZD.F),fund,2022-03-08,2026-06-03,4.2,993,31.58,6.69,8.96,0.377,-13.64,0.541,-0.894,53.8,174.059998,,
+LU2208987680,Allianz ActiveInvest Dynamic,Mixed,EUR,allianzgi/excel,fund,2021-06-07,2026-06-03,5.0,1240,30.85,5.54,12.16,0.182,-22.11,0.281,-1.244,55.0,155.13,,
 LU2399975627,Allianz Global Investors Fund - Allianz Better World Dynamic,Mixed,EUR,yfinance (ticker=0P0001NSOI.F),fund,2022-03-08,2026-06-03,4.2,962,29.32,6.25,12.67,0.28,-16.96,0.445,-1.201,52.0,107.760002,,
 LU2514905111,Allianz Better World Dynamic CT2 EUR,Mixed,EUR,yfinance (ticker=0P0001PMAQ.F),fund,2022-09-02,2026-06-03,3.8,888,28.26,6.86,11.55,0.324,-17.01,0.455,-1.079,52.2,125.43,,
 LU0158827518,Allianz Global Sustainability AT EUR,Equity Global,EUR,yfinance (ticker=0P0001KEQL.F),fund,2022-03-08,2026-06-03,4.2,1020,27.88,5.97,15.27,0.213,-20.34,0.357,-1.386,53.4,158.350006,,
@@ -48,6 +49,7 @@ LU2364421367,Allianz Global Investors Fund - Allianz Better World Moderate,Mixed
 BM_EUR_CORP,iShares EUR Corp Bond ETF,Renta Fija,EUR,,benchmark,2009-03-06,2026-06-03,17.2,4354,19.67,1.05,4.26,-0.674,-18.19,0.062,-0.341,52.7,119.669998,BM_EUR_CORP,IEAC.L
 LU2514904908,Allianz Better World Defensive CT2 EUR,Mixed,EUR,yfinance (ticker=0P0001PMAP.F),fund,2022-09-02,2026-06-03,3.8,890,19.06,4.76,5.9,0.19,-8.37,0.612,-0.549,54.6,117.300003,,
 ES0108373004,Allianz Cartera Moderada FI,Mixed,EUR,yfinance (ticker=0P0001JD2R.F),fund,2020-02-28,2026-06-01,6.3,1580,18.88,2.8,3.03,-0.394,-5.15,0.545,-0.3,53.6,11.88762,,
+LU2208987508,Allianz ActiveInvest Balanced,Mixed,EUR,allianzgi/excel,fund,2021-06-07,2026-06-03,5.0,1240,17.02,3.2,8.78,-0.048,-20.23,0.177,-0.893,55.4,131.61,,
 DE000A2DU1Y2,Kapital Plus,Mixed,EUR,yfinance (ticker=0P0001IXUP.F),fund,2019-01-02,2026-06-03,7.4,1860,15.98,2.02,6.95,-0.252,-21.5,0.105,-0.703,54.3,104.489998,,
 LU2829845630,0P0001T95B.F,Mixed,EUR,yfinance (ticker=0P0001T95B.F),fund,2024-07-01,2026-06-03,1.9,457,15.66,7.86,6.82,0.627,-9.09,0.91,-0.625,57.2,115.660004,,
 LU2387748960,Allianz Global Investors Fund - Allianz Global Equity Unconstrained,Equity Global,EUR,yfinance (ticker=0P0001OJ9U.F),fund,2022-03-08,2026-06-03,4.2,952,15.3,3.42,19.1,0.084,-23.51,0.238,-1.743,52.7,113.459999,,
@@ -58,6 +60,7 @@ LU2637966677,Allianz Trgt Mat € o Bd II CT €,Fixed Income,EUR,yfinance (tick
 IE00BDT57Y96,PIMCO GIS Low Dur Inc E EUR Hdg Acc,Fixed Income,EUR,yfinance (ticker=0P0001D6OX.F),fund,2018-05-31,2026-06-02,8.0,1976,11.3,1.35,3.12,-0.829,-11.33,0.125,-0.297,36.9,11.13,,
 LU3034474745,0P0001V3NM.F,Mixed,EUR,yfinance (ticker=0P0001V3NM.F),fund,2025-04-30,2026-06-03,1.1,259,11.11,10.12,5.7,1.132,-6.04,1.729,-0.49,58.9,108.980003,,
 LU1462192250,Allianz Dyn MltAst Stgy SRI15 CT2 EUR,Mixed,EUR,yfinance (ticker=0P00018TZC.F),fund,2022-03-08,2026-06-03,4.2,992,10.65,2.42,5.34,-0.241,-11.4,0.238,-0.502,51.5,118.690002,,
+LU2208987763,Allianz ActiveInvest Defensive,Mixed,EUR,allianzgi/excel,fund,2021-06-07,2026-06-03,5.0,1240,10.23,1.97,6.11,-0.299,-16.99,0.128,-0.589,54.1,118.07,,
 LU0920839346,Allianz Global Investors Fund - Allianz Europe Equity Growth Select,Equity EU,EUR,yfinance (ticker=0P0000YRQ1.F),fund,2022-03-08,2026-06-03,4.2,1025,8.43,1.93,21.48,0.014,-27.31,0.157,-1.98,51.6,219.479996,,
 LU1363153823,Allianz US Short Dur Hi Inc Bd AT H2 EUR,Fixed Income,EUR,yfinance (ticker=0P00017LY4.F),fund,2022-03-08,2026-06-03,4.2,998,8.42,1.93,4.5,-0.412,-8.11,0.265,-0.42,52.2,121.029999,,
 ES0108193006,Allianz Cartera Bonos 26 FI,Mixed,EUR,yfinance (ticker=0P0001QOC7.F),fund,2023-03-17,2026-06-02,3.2,803,8.34,2.53,1.56,-0.941,-1.42,1.776,-0.157,59.4,10.83407,,
