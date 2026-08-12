@@ -28,6 +28,7 @@ BM_NIKKEI,Nikkei 225,RV Asia,JPY,,benchmark,1990-01-04,2026-08-10,36.6,8982,72.9
 LU2089281393,Allianz Global Investors Fund - Allianz Best Styles Europe Equity,Equity EU,EUR,yfinance (ticker=0P0001IXB9.F),fund,2022-03-08,2026-08-11,4.4,1071,71.84,13.01,13.31,0.725,-16.09,0.848,-1.273,55.1,172.720001,,
 LU0933100983,Allianz Global Investors Fund - Allianz Best Styles US Equity AT (H2-EUR),Equity US,EUR,yfinance (ticker=0P0000YYLC.F),fund,2022-03-08,2026-08-11,4.4,1035,68.01,12.43,18.31,0.564,-24.74,0.579,-1.834,52.8,382.429993,,
 LU1282651980,Allianz Emerging Markets Equity AT EUR,Equity EM,EUR,yfinance (ticker=0P00016V8I.F),fund,2022-03-08,2026-08-11,4.4,1026,65.23,12.01,17.72,0.56,-19.95,0.698,-1.613,54.0,237.360001,,
+LU1228143191,Allianz Global Investors Fund - Allianz Best Styles US Equity,Equity US,EUR,yfinance (ticker=0P00016UO8.F),fund,2022-03-08,2026-08-11,4.4,1041,64.88,11.96,18.24,0.537,-24.78,0.556,-1.827,52.3,287.170013,,
 LU2089280825,Allianz Global Investors Fund - Allianz Emerging Markets Equity,Equity EM,EUR,yfinance (ticker=0P0001IXB8.F),fund,2022-03-08,2026-08-11,4.4,1026,60.23,11.24,17.67,0.518,-20.23,0.651,-1.622,53.9,179.809998,,
 LU1602091867,Allianz Global Artfcl Intlgc CT EUR,Equity Thematic,EUR,yfinance (ticker=0P0001AKHI.F),fund,2022-03-08,2026-08-11,4.4,1041,58.25,10.92,28.8,0.392,-39.36,0.388,-2.961,53.8,355.059998,,
 BM_STOXX50,Euro Stoxx 50,RV Europa,EUR,,benchmark,2007-03-30,2026-08-11,19.4,4853,56.69,2.35,21.78,0.033,-60.29,0.078,-2.092,51.9,6551.220215,BM_STOXX50,^STOXX50E
